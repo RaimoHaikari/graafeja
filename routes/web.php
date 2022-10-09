@@ -14,12 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $users = App\Models\User::all();
+    return "<p>Käyttäjiä on yhteensä: ".count($users)." kpl</p>";
 });
 
 Route::get('/users', function () {
 
     $users = App\Models\User::all();
-
     return "<p>Käyttäjiä on yhteensä: ".count($users)." kpl</p>";
+
 });
