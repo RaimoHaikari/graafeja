@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $users = App\Models\User::all();
-    return "<p>Käyttäjiä on yhteensä: ".count($users)." kpl</p>";
+    return view('welcome');
 });
 
 Route::get('/users', function () {
