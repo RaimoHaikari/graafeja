@@ -18,9 +18,22 @@ type Query {
       name: String @where(operator: "like")
     ): [User!]! @all
 
-    hello: String!
+    stations: [Station]! @all
+}
 
-    greet(name: String!): String
+type Station {
+  "Laravelin käyttämä Unique primary key."
+  id: ID!
+  "Aseman id-tunnus"
+  stationID: Int!
+  "Aseman suomenkielinen nimi"
+  nimi: String!
+  "Pisteelle tapahtuneet palautukset"
+  palautuksia: Int!
+  "Pisteeltä suoritetut lainat"
+  lainoja: Int!
+  "Montako pyörää asemalta löytyy"
+  kapasiteetti: Int!
 }
 
 "Account of a person who utilizes this application."
