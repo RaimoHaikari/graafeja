@@ -17,6 +17,10 @@ type Query {
       "Filters by name. Accepts SQL LIKE wildcards `%` and `_`."
       name: String @where(operator: "like")
     ): [User!]! @all
+
+    hello: String!
+
+    greet(name: String!): String
 }
 
 "Account of a person who utilizes this application."

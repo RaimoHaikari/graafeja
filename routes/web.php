@@ -24,3 +24,8 @@ Route::get('/users', function () {
     return "<p>Käyttäjiä on yhteensä: ".count($users)." kpl</p>";
 
 });
+
+Route::get('/stations', function() {
+    $stations = App\Models\Station::all();
+    return "<p>Asemia on yhteensä: ".count($stations)." kpl</p>";
+});
