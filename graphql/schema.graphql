@@ -19,7 +19,11 @@ type Query {
     ): [User!]! @all
 
     stations: [Station]! @all
+
+    trips(departureStationID: Int! @eq): [Trip]! @paginate
 }
+
+
 
 type Station {
   "Laravelin käyttämä Unique primary key."
@@ -34,6 +38,19 @@ type Station {
   lainoja: Int!
   "Montako pyörää asemalta löytyy"
   kapasiteetti: Int!
+}
+
+
+type Trip {
+  "Lainausaseman id-tunnus"
+  departureStationID: Int!
+  "Palautusaseman id-tunnus"
+  returnStationId: Int!
+  "Matkan pituus"
+  coveredDistance: Int!
+  "Matkan kesto"
+  coveredDistance: Int!
+
 }
 
 "Account of a person who utilizes this application."
