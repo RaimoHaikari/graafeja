@@ -1,0 +1,458 @@
+"FID","ID","Nimi","Namn","Name","Osoite","Adress","Kaupunki","Stad","Operaattor","Kapasiteet","x","y","Lainauksia","medianLainaMatka","medianLainaAika","Palautuksia","medianPalautusMatka","medianPalautusAika"
+1,"501","Hanasaari","Hanaholmen","Hanasaari","Hanasaarenranta 1","Hanaholmsstranden 1","Espoo","Esbo","CityBike Finland",10,24.840319,60.16582,684,3714,1127.5,677,3992,1165
+2,"503","Keilalahti","Kägelviken","Keilalahti","Keilalahdentie 2","Kägelviksvägen 2","Espoo","Esbo","CityBike Finland",28,24.827467,60.171524,382,3510,987,357,3301,989
+3,"505","Westendinasema","Westendstationen","Westendinasema","Westendintie 1","Westendvägen 1","Espoo","Esbo","CityBike Finland",16,24.805758,60.168266,628,2886,893,621,2732,872
+4,"507","Golfpolku","Golfstigen","Golfpolku","Golfpolku 3","Golfstigen 3","Espoo","Esbo","CityBike Finland",16,24.796136,60.168143,211,1986,609,190,2035.5,619
+5,"509","Revontulentie","Norrskensvägen","Revontulentie","Revontulentie 10","Norrskensvägen 10","Espoo","Esbo","CityBike Finland",30,24.802938,60.171551,501,2556,829,505,2280,695
+6,"511","Sateentie","Regnvägen","Sateentie","Sateentie 2","Regnvägen 2","Espoo","Esbo","CityBike Finland",18,24.810688,60.173424,543,2530,782,540,2492,794
+7,"513","Hakalehto","Hagliden","Hakalehto","Merituulentie 18","Havsvindsvägen 18","Espoo","Esbo","CityBike Finland",24,24.79139,60.173567,685,1631,532,659,1477,498
+8,"515","Oravannahkatori","Gråskinnstorget","Oravannahkatori","Oravannahkatori 1","Gråskinnstorget 1","Espoo","Esbo","CityBike Finland",16,24.792559,60.175769,347,1239,385,324,1300,489
+9,"517","Länsituuli","Västanvinden","Länsituuli","Länsituulenkuja 3","Västanvindsgränden 3","Espoo","Esbo","CityBike Finland",24,24.802049,60.175358,1231,1482,425,1223,1488,468
+10,"518","Tuulimäki","Väderbacken","Tuulimäki","Itätuulenkuja 11","Östanvindsgränden 11","Espoo","Esbo","CityBike Finland",18,24.806051,60.174144,202,2546,756.5,196,2401,666
+11,"519","Tapionaukio","Tapioplatsen","Tapionaukio","Tapionaukio 9","Tapioplatsen 9","Espoo","Esbo","CityBike Finland",26,24.805825,60.176168,1059,1764,559,1066,1536,483
+12,"521","Kulttuuriaukio","Kulturplatsen","Kulttuuriaukio","Kulttuuriaukio 2","Kulturplatsen 2","Espoo","Esbo","CityBike Finland",30,24.803942,60.177588,665,1915,621,631,1837,567
+13,"523","Ahertajantie","Flitarvägen","Ahertajantie","Ahertajantie 1","Flitargränden 1","Espoo","Esbo","CityBike Finland",20,24.797984,60.17875,360,1563,450.5,370,1525,510.5
+14,"525","Mäntyviita","Tallbysket","Mäntyviita","Mäntyviita 2","Tallbysket 2","Espoo","Esbo","CityBike Finland",10,24.810974,60.178702,519,1453,434,517,1337,452
+15,"527","Otsolahti","Björnviken","Otsolahti","Otsolahdentie 18","Björnviksvägen 18","Espoo","Esbo","CityBike Finland",18,24.817423,60.178655,686,1325,388,687,1418,466
+16,"529","Keilaniemi (M)","Kägeludden (M)","Keilaniemi (M)","Keilaniementie 4","Kägeluddsvägen 4","Espoo","Esbo","CityBike Finland",40,24.82895,60.175233,711,1964,599,651,1823,563
+17,"531","Keilaranta","Kägelstranden","Keilaranta","Keilaranta 13","Kägelstranden 13","Espoo","Esbo","CityBike Finland",24,24.835132,60.178762,361,3518,867,348,3475,920.5
+18,"532","Betonimies","Betongblandaren","Betonimies","Betonimiehenkuja 1","Betongblandargränden 1","Espoo","Esbo","CityBike Finland",16,24.831804,60.180027,328,3649.5,894.5,317,2271,801
+19,"533","Tekniikantie","Teknikvägen","Tekniikantie","Tekniikantie 3","Teknikvägen 3","Espoo","Esbo","CityBike Finland",18,24.824747,60.180806,578,1348.5,376.5,574,1309.5,418
+20,"537","Innopoli","Innopoli","Innopoli","Tekniikantie 14","Teknikvägen 14","Espoo","Esbo","CityBike Finland",20,24.81422,60.185096,154,2607,839,153,2611,644
+21,"538","Hagalundinpuisto","Hagalundinpuisto","Hagalundsparken","Tekniikantie 15","Teknikvägen 15","Espoo","Esbo","CityBike Finland",14,24.817403,60.18363,78,1652.5,487.5,73,1502,456
+22,"539","Aalto-yliopisto (M), Tietot","Aalto-universitetet (M),","Aalto University (M), Tietotie","Tietotie 4","Datavägen 4","Espoo","Esbo","CityBike Finland",20,24.820099,60.184987,618,1254.5,369,605,1255,359
+23,"541","Aalto-yliopisto (M), Korkea","Aalto-universitetet (M),","Aalto University (M), Korkeakoulua","Otaniementie 10","Otnäsvägen 10","Espoo","Esbo","CityBike Finland",42,24.826671,60.184312,3131,834,286,3071,804,265
+24,"543","Otaranta","Oststranden","Otaranta","Otaranta 6","Otstranden 6","Espoo","Esbo","CityBike Finland",22,24.837133,60.18483,1167,2295,739,1164,2284,648.5
+25,"545","Sähkömies","Strömkarlen","Sähkömies","Otakaari 3","Otsvängen 3","Espoo","Esbo","CityBike Finland",12,24.829985,60.188499,456,1176,428.5,436,1224,427
+26,"547","Jämeräntaival","Bistervägen","Jämeräntaival","Otakaari 18","Otsvängen 18","Espoo","Esbo","CityBike Finland",30,24.835033,60.188118,2710,909,306,2606,951,326
+27,"549","Maarinranta","Marstranden","Maarinranta","Maarinrannantie 4","Marstrandvägen 4","Espoo","Esbo","CityBike Finland",12,24.810193,60.187529,514,1821,555.5,500,1706,492
+28,"551","Tietäjä","Siaren","Tietäjä","Valkjärventie 4","Valkjärvivägen 4","Espoo","Esbo","CityBike Finland",20,24.807083,60.189143,264,1741,509.5,245,2168,621
+29,"553","Metsänneidonpolku","Skogsjungfrustigen","Metsänneidonpolku","Metsänneidonpolku 5","Skogsjungfrustigen 5","Espoo","Esbo","CityBike Finland",19,24.806152,60.186731,424,1547.5,447,408,1508,472
+30,"555","Kalevalantie","Kalevalavägen","Kalevalantie","Kalevalantie 7","Kalevalavägen 7","Espoo","Esbo","CityBike Finland",21,24.804022,60.184765,651,1550,498,634,1544.5,464
+31,"557","Louhentori","Louhitorget","Louhentori","Louhentie 16","Louhivägen 16","Espoo","Esbo","CityBike Finland",16,24.796959,60.18715,563,1513,450,596,1496,471
+32,"559","Pohjankulma","Norrhörnet","Pohjankulma","Louhentie 2","Louhivägen 2","Espoo","Esbo","CityBike Finland",25,24.794014,60.18288,767,1482,467,768,1390,481.5
+33,"561","Koivu-Mankkaa","Björkmankans","Koivu-Mankkaa","Urpu 6","Hänget 6","Espoo","Esbo","CityBike Finland",23,24.78576,60.182976,243,1535,514,241,1605,535
+34,"563","Mankkaanlaaksontie","Mankansdalsvägen","Mankkaanlaaksontie","Mankkaanlaaksontie 1","Mankansdalsvägen 1","Espoo","Esbo","CityBike Finland",26,24.780478,60.188706,257,3419,905,298,3397.5,839
+35,"565","Mankkaanaukio","Mankansplatsen","Mankkaanaukio","Mankkaantie 3","Mankasvägen 3","Espoo","Esbo","CityBike Finland",20,24.769021,60.194599,242,3176,904,271,2989,916
+36,"571","Tapiolan urheilupuisto","Hagalunds idrottspark","Tapiola Sports Park","Urheilupuistontie 3","Idrottsparksvägen 3","Espoo","Esbo","CityBike Finland",32,24.784654,60.177749,421,1590,480,454,1590,425
+37,"573","Urheilupuisto (M)","Idrottsparken (M)","Sports Park (M)","Jousenpuistonkatu 4","Bågparksgatan 4","Espoo","Esbo","CityBike Finland",28,24.779428,60.17465,1709,1249,390,1720,1221,357
+38,"575","Tontunmäentie","Tomtekullavägen","Tontunmäentie","Tontunmäentie 25","Tomtekullavägen 25","Espoo","Esbo","CityBike Finland",16,24.769667,60.176107,357,757,262,358,970,352
+39,"577","Olarinluoma","Olarsbäcken","Olarinluoma","Olarinluoma 19","Olarsbäcken 19","Espoo","Esbo","CityBike Finland",18,24.760606,60.180848,229,1921,543,240,2028,559.5
+40,"579","Niittymaa","Ängsmalmen","Niittymaa","Niittymaantie 2","Ängsmalmsvägen 2","Espoo","Esbo","CityBike Finland",21,24.775913,60.171127,1242,1847.5,579.5,1246,1950,580.5
+41,"581","Niittykumpu (M)","Ängskulla (M)","Niittykumpu (M)","Merituulentie 38","Havsvindsvägen 38","Espoo","Esbo","CityBike Finland",35,24.763184,60.170758,1957,1829,528,1993,1864,535
+42,"583","Haukilahdenkatu","Gäddviksgatan","Haukilahdenkatu","Ahventie 2","Abborrvägen 2","Espoo","Esbo","CityBike Finland",16,24.772708,60.166481,476,1421,482.5,481,1364,448
+43,"585","Haukilahdenaukio","Gäddviksplatsen","Haukilahdenaukio","Haukilahdenranta 2","Gäddviksstranden 2","Espoo","Esbo","CityBike Finland",16,24.775882,60.162396,510,1313.5,450,524,1606,492.5
+44,"587","Hauenkallio","Gäddberget","Hauenkallio","Hauenkalliontie 12","Gäddbergsvägen 12","Espoo","Esbo","CityBike Finland",12,24.767831,60.162477,195,1541,404,174,1670,597
+45,"589","Haukilahdenranta","Gäddviksstranden","Haukilahdenranta","Haukilahdenranta 13","Gäddviksstranden 13","Espoo","Esbo","CityBike Finland",16,24.769864,60.158048,417,2140,675,489,2055,633
+46,"591","Mellstenintie","Mellstensvägen","Mellstenintie","Mellstenintie 17","Mellstensvägen 17","Espoo","Esbo","CityBike Finland",25,24.773993,60.154941,735,2587,903,816,2597,869
+47,"593","Toppelundintie","Toppelundsvägen","Toppelundintie","Toppelundintie 11","Toppelundsvägen 11","Espoo","Esbo","CityBike Finland",12,24.782477,60.1591405,234,2538,773.5,239,2299,733
+48,"595","Westendintie","Westendvägen","Westendintie","Westendintie 34","Westendvägen 34","Espoo","Esbo","CityBike Finland",16,24.791754,60.158194,415,3357,987,401,3406,1000
+49,"596","Toppelundinportti","Toppelundsporten","Toppelundinportti","Haukilahdenkatu 2","Gäddviksgatan 2","Espoo","Esbo","CityBike Finland",20,24.7848628,60.1624471,304,1738,565,320,1860,640
+50,"597","Linnakepolku","Fortstigen","Linnakepolku","Westendintie 99","Westendvägen 99","Espoo","Esbo","CityBike Finland",10,24.790132,60.1637,307,2064,707,329,1960,648
+51,"601","Nokkala","Nokkala","Nokkala","Nokkalanniemi 2","Nokkalaparken 2","Espoo","Esbo","CityBike Finland",18,24.754344,60.147974,374,2669,933,374,2476.5,819.5
+52,"603","Matinlahdenranta","Mattviksstranden","Matinlahdenranta","Rantamäki 2","Strandbacken 2","Espoo","Esbo","CityBike Finland",20,24.754196,60.151041,443,1946,777,444,1842,684
+53,"607","Nuottaniementie","Notuddsvägen","Nuottaniementie","Nuottatie 1","Notvägen 1","Espoo","Esbo","CityBike Finland",15,24.741546,60.147921,266,2113,678,277,2129,674
+54,"609","Sepetlahdentie","Sepetviksvägen","Sepetlahdentie","Sepetlahdentie 11","Sepetviksvägen 11","Espoo","Esbo","CityBike Finland",10,24.741234,60.152343,355,1045,320,348,1075,379.5
+55,"611","Matinkartanontie","Mattgårdvägen","Matinkartanontie","Matinkartanontie 2","Mattsgårdsvägen 2","Espoo","Esbo","CityBike Finland",21,24.752489,60.156258,696,1090,338,723,1235,356
+56,"613","Matinkyläntie","Mattbyvägen","Matinkyläntie","Joosepinkuja 1","Josefsgränden 1","Espoo","Esbo","CityBike Finland",15,24.744978,60.155689,447,865,297,436,934,357
+57,"615","Tiistiläntie","Distbyvägen","Tiistiläntie","Tiistiläntie 6","Distbyvägen 6","Espoo","Esbo","CityBike Finland",24,24.737664,60.156755,249,1321,462,242,1343,485
+58,"617","Tiistinkallio","Distberget","Tiistinkallio","Kalastajantie 29","Fiskarvägen 29","Espoo","Esbo","CityBike Finland",12,24.729112,60.153737,304,1648.5,526.5,356,1839.5,552.5
+59,"619","Etuniementie","Framnäsvägen","Etuniementie","Kalastajantie 6","Fiskarvägen 6","Espoo","Esbo","CityBike Finland",10,24.724835,60.160645,238,1408.5,498.5,235,1549,523
+60,"621","Hauenkalliontie","Gäddbergsvägen","Hauenkalliontie","Hauenkalliontie 22","Gäddbergsvägen 22","Espoo","Esbo","CityBike Finland",12,24.756272,60.161138,381,1663,546,426,1630,497
+61,"623","Nelikkotie","Fjärdingsvägen","Nelikkotie","Nelikkotie 14","Fjärdingsvägen 14","Espoo","Esbo","CityBike Finland",16,24.74663,60.161588,306,1697,485.5,294,1701.5,505.5
+62,"625","Suomenlahdentie","Finnviksvägen","Suomenlahdentie","Suomenlahdentie 2","Finnviksvägen 2","Espoo","Esbo","CityBike Finland",32,24.741294,60.160015,1609,1199,396,1636,1137,370
+63,"627","Piispansilta","Biskopsbron","Piispansilta","Piispansilta 11","Biskopsknuten 11","Espoo","Esbo","CityBike Finland",44,24.738416,60.162403,1388,1433,467,1360,1520.5,489
+64,"629","Piispanportti","Biskopsporten","Piispanportti","Piispanportti 4","Biskopsporten 4","Espoo","Esbo","CityBike Finland",16,24.732688,60.165603,417,1743,515,434,1697,493
+65,"631","Friisilänaukio","Frisansplatsen","Friisilänaukio","Friisiläntie 2","Frisansvägen 2","Espoo","Esbo","CityBike Finland",12,24.721367,60.162842,398,1845.5,607.5,381,1803,540
+66,"633","Avaruuskatu","Rymdgatan","Avaruuskatu","Avaruuskatu 1","Rymdgatan 2","Espoo","Esbo","CityBike Finland",16,24.724908,60.168971,119,1709,611,123,1674,582
+67,"635","Kuunkatu","Mångatan","Kuunkatu","Kuunkatu 3","Mångatan 3","Espoo","Esbo","CityBike Finland",24,24.726025,60.172673,475,1568,520,472,1553.5,568.5
+68,"637","Ruomelantie","Romensvägen","Ruomelantie","Ruomelantie 19","Romensvägen 19","Espoo","Esbo","CityBike Finland",12,24.729314,60.174524,320,1825,522,305,1919,649
+69,"639","Itäportti","Österporten","Itäportti","Ruomelantie 5","Romensvägen 5","Espoo","Esbo","CityBike Finland",18,24.738122,60.174914,258,1797,533,217,1848,636
+70,"641","Komeetankatu","Kometgatan","Komeetankatu","Komeetankatu 2","Kometgatan 2","Espoo","Esbo","CityBike Finland",16,24.735969,60.167216,576,1354,444,561,1221,427
+71,"643","Auringonkatu","Solgatan","Auringonkatu","Auringonkatu 2","Solbanan 2","Espoo","Esbo","CityBike Finland",20,24.731472,60.171548,197,1243,449,190,1104,432.5
+72,"645","Piispankallio","Biskopsberget","Piispankallio","Piispankallio 2","Biskopsberget 2","Espoo","Esbo","CityBike Finland",16,24.743532,60.168441,242,1590,505.5,240,1709.5,526
+73,"647","Lystimäki","Lustikulla","Lystimäki","Lystimäentie 2","Lustikullavägen 2","Espoo","Esbo","CityBike Finland",12,24.745666,60.172814,166,1649.5,519,169,1543,577
+74,"649","Lystimäensilta","Lustikullabron","Lystimäensilta","Vuosikuja 2","Årsgränden 2","Espoo","Esbo","CityBike Finland",15,24.752442,60.17471,177,1137,417,191,1090,391
+75,"651","Suurpellonaukio","Storåkersplatsen","Suurpellonaukio","Suurpellon puistokatu 4","Storaåkerns parkgata 4","Espoo","Esbo","CityBike Finland",24,24.744131,60.184596,290,2800.5,872.5,307,2969,883
+76,"653","Lukutori","Lukutorget","Lukutori","Suurpellon puistokatu 18","Storaåkerns parkgata 18","Espoo","Esbo","CityBike Finland",14,24.742571,60.187052,333,3357,1124,341,3065,1008
+77,"701","Gallen-Kallelan tie","Gallen-Kallelas väg","Gallen-Kallelan tie","Gallen-Kallelan tie 29","Gallen-Kallelas vägen 29","Espoo","Esbo","CityBike Finland",10,24.840699,60.206142,612,2662.5,885,627,2787,939
+78,"703","Elfvik","Elfvik","Elfvik","Elfvikintie 4","Elfviksvägen 4","Espoo","Esbo","CityBike Finland",10,24.8231,60.203852,217,2740,952,233,2775,939
+79,"705","Laajalahden keskus","Bredviks centrum","Laajalahden keskus","Kirvuntie 22","Kirvusvägen 22","Espoo","Esbo","CityBike Finland",19,24.80493,60.203892,287,2756,818,314,3094.5,948.5
+80,"707","Majurinkulma","Majorshörnet","Majurinkulma","Itsehallintotie 8","Självstyrelsevägen 8","Espoo","Esbo","CityBike Finland",24,24.824954,60.210735,653,1631,610,673,1641,606
+81,"709","Yhdyskunnankuja","Samhällsgränden","Yhdyskunnankuja","Yhdyskunnankuja 1","Samhällsgränden 1","Espoo","Esbo","CityBike Finland",20,24.819549,60.212508,432,1290,432,428,1312.5,475.5
+82,"711","Kirjurinkuja","Skrivargränden","Kirjurinkuja","Kirjurinkuja 1","Skrivargränden 1","Espoo","Esbo","CityBike Finland",26,24.826368,60.215751,1189,1296,444,1260,1231,403.5
+83,"713","Upseerinkatu","Officersgatan","Upseerinkatu","Upseerinkatu 3","Officersgatan 3","Espoo","Esbo","CityBike Finland",30,24.819396,60.216067,253,743,267,242,800.5,303
+84,"715","Komentajankatu","Kommendörsgatan","Komentajankatu","Perkkaantie 5","Bergansvägen 5","Espoo","Esbo","CityBike Finland",12,24.821932,60.216222,303,990,395,324,1192.5,431
+85,"719","Säteri","Säteri","Säteri","Säterinkatu 6","Säterigatan 6","Espoo","Esbo","CityBike Finland",32,24.811572,60.213443,282,1762.5,590.5,260,1873,550.5
+86,"721","Säterinrinne","Säteribrinken","Säterinrinne","Ruusutorpantie 1","Rosatorpsvägen 1","Espoo","Esbo","CityBike Finland",16,24.805613,60.214193,174,1734,629.5,173,1357,583
+87,"723","Säterinniitty","Säteriängen","Säterinniitty","Säterinpuistontie 16","Säteriparksvägen 16","Espoo","Esbo","CityBike Finland",10,24.800486,60.214666,378,1428,482.5,377,1490,481
+88,"725","Rummunlyöjänkatu","Trumslagargatan","Rummunlyöjänkatu","Leppävaarankatu 13","Albergagatan 13","Espoo","Esbo","CityBike Finland",20,24.806279,60.217261,545,1913,734,551,2199,745
+89,"727","Ratsutori","Ryttartorget","Ratsutori","Leppävaarankatu 1","Albergagatan 1","Espoo","Esbo","CityBike Finland",33,24.812419,60.217311,1664,1103,402.5,1693,1100,394
+90,"729","Leppävaaranaukio","Albergaplanen","Leppävaaranaukio","Hevosenkenkä 3","Hästskon 3","Espoo","Esbo","CityBike Finland",30,24.813885,60.218869,0,0,0,0,0,0
+91,"731","Leppävaarankäytävä","Albergapassagen","Leppävaarankäytävä","Läkkisepänkuja 3","Bleckslagargränden 3","Espoo","Esbo","CityBike Finland",21,24.813437,60.220254,1173,1152,404,1371,1142,344
+92,"733","Läkkitori","Blecktorget","Läkkitori","Läkkisepänkuja 3","Bleckslagargränden 3","Espoo","Esbo","CityBike Finland",25,24.813109,60.221019,402,1278,431.5,459,1170,360
+93,"735","Armas Launiksen katu","Armas Launis gata","Armas Launiksen katu","Armas Launiksen katu 8","Armas Launis gata 8","Espoo","Esbo","CityBike Finland",20,24.818128,60.221781,180,992.5,310.5,149,1145,452
+94,"737","Muurarinkuja","Murargränden","Muurarinkuja","Muurarinkuja 4","Murargränden 4","Espoo","Esbo","CityBike Finland",19,24.812271,60.223769,356,906.165,285.5,332,841.5,300
+95,"739","Postipuun koulu","Postipuun koulu","Postipuun koulu","Mäkkylän puistotie 14","Mäkkyläallén 14","Espoo","Esbo","CityBike Finland",16,24.826396,60.223827,188,1490,441,184,1462.5,458
+96,"741","Gransinmäki","Gransbacken","Gransinmäki","Vanha maantie 6","Gamla landsvägen 6","Espoo","Esbo","CityBike Finland",20,24.804898,60.222154,65,1633,500,77,1270,432
+97,"745","Leppävaaran urheilupuisto","Alberga idrottspark","Leppävaaran urheilupuisto","Veräjäpellonkatu 17","Grindåkersgatan 17","Espoo","Esbo","CityBike Finland",32,24.800971,60.224943,298,1550.5,571.5,308,1641,538.5
+98,"747","Leppävaaran uimahalli","Alberga simhall","Leppävaaran uimahalli","Veräjäpellonkatu 12","Grindåkersgatan 12","Espoo","Esbo","CityBike Finland",18,24.804735,60.226379,147,1247,454,142,1214,442
+99,"749","Vallikatu","Vallgatan","Vallikatu","Vallikatu 19","Vallgatan 19","Espoo","Esbo","CityBike Finland",24,24.813871,60.228463,363,1031,285,289,1093,452
+100,"751","Vallipolku","Vallgången","Vallipolku","Vallikatu 12","Vallgatan 12","Espoo","Esbo","CityBike Finland",20,24.819614,60.227827,143,1294,372,109,1381,639
+101,"753","Linnuntie","Fågelvägen","Linnuntie","Linnuntie 2","Fågelsvägen 2","Espoo","Esbo","CityBike Finland",24,24.813954,60.234401,315,1731,554,331,1748,670
+102,"755","Kutsuntatie","Uppbådsvägen","Kutsuntatie","Lintulaaksontie 2","Fågeldalsvägen 2","Espoo","Esbo","CityBike Finland",16,24.824561,60.230453,104,1803,502,88,1865,569.5
+103,"757","Painiitty","Pajängen","Painiitty","Lotankatu 1","Lottagatan 1","Espoo","Esbo","CityBike Finland",12,24.831397,60.235089,238,2115,572,183,2186,656
+104,"761","Mäkkylän asema","Mäkkylä station","Mäkkylän asema","Perkkaantie 20","Bergansvägen 20","Espoo","Esbo","CityBike Finland",32,24.83939,60.220467,273,1778,541,239,2656,826
+105,"763","Kalkkipellonmäki","Kalkåkersbacken","Kalkkipellonmäki","Turuntie 22","Åbovägen 22","Espoo","Esbo","CityBike Finland",24,24.833536,60.220551,324,1669,461,258,1639.5,530
+106,"767","Ruutikatu","Krutgatan","Ruutikatu","Ruutikatu 10","Krugranden 10","Espoo","Esbo","CityBike Finland",10,24.820635,60.223377,165,1125,282,145,1131,431
+107,"769","Tiurintie","Tiurisvägen","Tiurintie","Kurkijoentie 1","Kronoborgsvägen 1","Espoo","Esbo","CityBike Finland",12,24.814562,60.204951,117,3387,840,120,3450,984.5
+108,"900","Orionintie","Orionvägen","Orionintie","Orionintie 3-5","Orionvägen 3-5","Espoo","Esbo","CityBike Finland",20,24.771826,60.180118,368,879,283,390,879,286.5
+109,"901","O'Bike Station","O'Bike Station","O'Bike Station","Rauhalanpuisto 11","Rauhalaparken 11","Espoo","Esbo","CityBike Finland",20,24.742219,60.163412,135,1390,437,134,1381,410
+110,"902","Derby Business Park","Derby Business Park","Derby Business Park","Tarvonsalmenkatu 17","Tarvosundsgatan 17","Espoo","Esbo","CityBike Finland",20,24.835356,60.209017,82,3137,744.5,85,2938,747
+111,"001","Kaivopuisto","Brunnsparken","Kaivopuisto","Meritori 1","Havstorget 1","","","",30,24.9502114714031,60.155369615074,2623,2683,909,2841,2627,879
+112,"002","Laivasillankatu","Skeppsbrogatan","Laivasillankatu","Laivasillankatu 14","Skeppsbrogatan 14","","","",12,24.9565097715858,60.1609890692806,927,2095,702,909,2301,776
+113,"003","Kapteeninpuistikko","Kaptensskvären","Kapteeninpuistikko","Tehtaankatu 13","Fabriksgatan 13","","","",16,24.9450181631667,60.1581769029949,1796,2032.5,657.5,1703,2029,688
+114,"004","Viiskulma","Femkanten","Viiskulma","Fredrikinkatu 19","Fredriksgatan  19","","","",14,24.9417758006418,60.1609858921764,2010,1712,593.5,2017,1681,619
+115,"005","Sepänkatu","Smedsgatan","Sepänkatu","Tehtaankatu 25","Fabriksgatan 25","","","",32,24.9362853002102,60.157948291819,2282,1980,645.5,2290,1888,635
+116,"006","Hietalahdentori","Sandvikens torg","Hietalahdentori","Hietalahdenkatu 2","Sandviksgatan 2","","","",24,24.9296476311878,60.1622283898112,3432,1667.5,599,3477,1713,606
+117,"007","Designmuseo","Designmuseet","Design Museum","Korkeavuorenkatu 23","Högbergsgatan 23","","","",14,24.9459599998806,60.16310319166,1248,1539.5,538,1241,1686,589
+118,"008","Vanha kirkkopuisto","Gamla kyrkoparken","Vanha kirkkopuisto","Annankatu 16","Annegatan 16","","","",24,24.9391145483706,60.1653538465664,1958,1812.5,654.5,2102,1835.5,675
+119,"009","Erottajan aukio","Skillnadsplatsen","Erottajan aukio","Eteläesplanadi 22","Södra esplanaden 22","","","",44,24.9441887601673,60.1668948711694,2709,1960,666,2708,1748.5,601.5
+120,"010","Kasarmitori","Kaserntorget","Kasarmitori","Fabianinkatu 13","Fabiansgatan 13","","","",28,24.9494728793816,60.165017172741,1263,1611,604,1229,1627,604
+121,"011","Unioninkatu","Unionsgatan","Unioninkatu","Eteläesplanadi 1","Södra esplanaden 1","","","",22,24.9510226994024,60.1674572921424,1867,1929,712,2344,1921,676
+122,"012","Kanavaranta","Kanalkajen","Kanavaranta","Kanavaranta 1","Kanalkajen 1","","","",34,24.9584922784237,60.1684959040351,3407,2101,687,3601,2086,679
+123,"013","Merisotilaantori","Flottisttorget","Merisotilaantori","Merisotilaantori","Flottisttorget","","","",24,24.9755284752387,60.1679190540567,1037,2481,746,1040,2530,777
+124,"014","Senaatintori","Senatstorget","Senate Square","Aleksanterinkatu 22","Alexandersgatan 22","","","",22,24.9526414004662,60.1691277919118,999,1892,711,989,1899,657
+125,"015","Ritarikatu","Riddaregatan","Ritarikatu","Ritarikatu 7","Riddaregatan 7","","","",12,24.9555218601895,60.1710906797301,1128,1916.5,637.5,1120,1922,630
+126,"016","Liisanpuistikko","Elisabetsskvären","Liisanpuistikko","Liisankatu 1","Elisabetsgatan 1","","","",16,24.9613746997628,60.1741821916183,2944,2349,733,3018,1999,664
+127,"017","Varsapuistikko","Fölskvären","Varsapuistikko","Yrjö-Koskisen katu 1","Yrjö-Koskinens gata 1","","","",28,24.9494967766807,60.1730909028646,2060,1931,642.5,2039,2141,651
+128,"018","Porthania","Porthania","Porthania","Yliopistonkatu 3","Universitetsgatan 3","","","",30,24.9493081473109,60.1696567475916,757,1609,553,793,2006,632
+129,"019","Rautatientori / itä","Järnvägstorget/öst","Central Railway Station/East","Rautatientori 1","Järnvägstorget 1","","","",20,24.9425267992462,60.1708235917114,3548,2005,642.5,3768,1905.5,591.5
+130,"020","Kaisaniemenpuisto","Kajsaniemiparken","Kaisaniemenpuisto","Bergbominkuja 1","Bergbomsgränden 1","","","",22,24.9433556359399,60.1732349001278,1570,1622.5,556.5,1599,1641,494
+131,"021","Töölönlahdenkatu","Tölöviksgatan","Töölönlahdenkatu","Elielinaukio 5","Elielplatsen 5","","","",44,24.9393079129956,60.1721906837527,4544,1922,574,4643,1978,561
+132,"022","Rautatientori / länsi","Järnvägstorget/väst","Central Railway Station/West","Kaivokatu 1","Brunnsgatan 1","","","",16,24.9397601000633,60.1706060919732,3627,1986,631,3750,1976,614
+133,"023","Kiasma","Kiasma","Kiasma","Mannerheiminaukio 1","Mannerheimplatsen 1","","","",30,24.9374279000749,60.1712578922641,1808,2368,732.5,1797,2290,694
+134,"024","Mannerheimintie","Mannerheimvägen","Mannerheimintie","Mannerheiminitie 18","Mannerheimvägen 18","","","",20,24.9394194995361,60.1690723919948,2248,1803,624,2283,1690,581
+135,"025","Narinkka","Narinken","Narinkka","Narinkka 1","Narinken 1","","","",40,24.9346069826026,60.1700420279259,2647,2121,708,2596,2045,653
+136,"026","Kamppi (M)","Kampen (M)","Kamppi (M)","Fredrikinkatu 44","Fredriksgatan 44","","","",32,24.9305373005364,60.168609492141,3845,1476,500,3768,1592,537
+137,"027","Eerikinkatu","Eriksgatan","Eerikinkatu","Eerikinkatu 3","Eriksgatan 3","","","",14,24.9366415937527,60.1677057096398,746,1398,472,750,1457,557.5
+138,"028","Lastenlehto","Barnlunden","Lastenlehto","Lapinrinne","Lappbrinken","","","",16,24.9270362659605,60.1657993006509,1454,1662,586.5,1416,1705,639.5
+139,"029","Baana","Banan","Baana","Ruoholahdenkatu 23","Gräsviksgatan 23","","","",16,24.9225706207902,60.1641173724871,2778,1790,591.5,2899,1805,576
+140,"030","Itämerentori","Östersjötorget","Itämerentori","Itämerentori 1","Östersjötorget 1","","","",40,24.9145164996449,60.1635308918594,6677,1756,562,6671,1839,583
+141,"031","Marian sairaala","Maria sjukhus","Maria Hospital","Pohjoinen Rautatiekatu 33","Norra Järnvägsgatan 33","","","",16,24.9227415692015,60.1683228179992,2481,1749,558,2476,1814.5,619
+142,"032","Eläinmuseo","Naturhistoriska museet","Finnish Museum of Natural History","Pohjoinen Rautatiekatu 13","Norra Järnvägsgatan 13","","","",20,24.9318975121431,60.1713588986588,1278,1643,522,1252,1714,549
+143,"033","Kauppakorkeakoulu","Handelshögskolan","Hanken School of Economics","Lapuankatu 1","Lappogatan 1","","","",16,24.923839759,60.171202903,1623,1651,500,1540,1668,529.5
+144,"034","Kansallismuseo","Nationalmuseum","National Museum","Mannerheimintie 30","Mannerheimvägen 30","","","",16,24.9328983153441,60.173956898526,889,1715,566,881,1909,639
+145,"035","Cygnaeuksenkatu","Cygnaeusgatan","Cygnaeuksenkatu","Cygnaeuksenkatu 1","Cygnaeusgatan 1","","","",16,24.9282685568484,60.1741008716685,1021,1519,492,1019,1449,495
+146,"036","Apollonkatu","Apollogatan","Apollonkatu","Runeberginkatu 43","Runebergsgatan 43","","","",20,24.9224632983339,60.1760927790452,2907,1960,634,2902,1886.5,628
+147,"037","Töölönkatu","Tölögatan","Töölönkatu","Pohjoinen Hesperiankatu 3","Norra Hesperiagatan 3","","","",18,24.9283525094474,60.1775346191328,2443,1794,572,2449,1820,566
+148,"038","Töölöntori","Tölötorg","Töölöntori","Töölöntorinkatu 11","Tölötorggatan 11","","","",16,24.9249700522851,60.1791005171717,1723,1995,645,1721,2103,673
+149,"039","Ooppera","Nationaloperan","Opera","Mannerheimintie 62","Mannerheimvägen 62","","","",24,24.9266869997467,60.182552891987,2876,2058,672.5,2931,2070,639
+150,"040","Hakaniemi (M)","Hagnäs (M)","Hakaniemi (M)","John Stenberginranta 6","John Stenbergs strand 6","","","",28,24.9522579797678,60.1780816347447,2802,2066,687,2803,2115,684
+151,"041","Ympyrätalo","Runda huset","Ympyrätalo","Porthaninrinne 1","Porthansbrinken 1","","","",36,24.949399999845,60.1808629918822,4952,2212.5,714,5009,2179,690
+152,"042","Haapaniemenkatu","Aspnäsgatan","Haapaniemenkatu","Haapaniemenkatu 2","Aspnäsgatan 2","","","",18,24.9551952848707,60.1831601093456,1091,2338,725,1029,2329,781
+153,"043","Karhupuisto","Björnparken","Karhupuisto","Agricolankatu 11","Agricolagatan 11","","","",24,24.9526762998375,60.18428329212,1300,2223,687.5,1204,2162,732.5
+154,"044","Sörnäinen (M)","Sörnäs (M)","Sörnäinen (M)","Vaasanpuistikko 1a","Vaasanpuistikko 1a","","","",22,24.960554135,60.187712639,3720,2225,662.5,3553,2252,734
+155,"045","Brahen kenttä","Braheplan","Brahen kenttä","Helsinginkatu 22","Helsingegatan 22","","","",20,24.9508131529517,60.1867902883311,2375,2265,674,2249,2305,727
+156,"046","Diakoniapuisto","Diakoniparken","Diakoniapuisto","Josafatinkatu 12","Josafatsgatan 12","","","",16,24.9435409604638,60.1869040535812,1349,2048,644,1277,2064,733
+157,"047","Vanha Kauppahalli","Salutorget","Market Square","Pakkahuoneenlaituri","Packhuskajen","","","",22,24.9535685411145,60.1652833427097,515,2109,753,533,2060,658
+158,"048","Mastokatu","Mastgatan","Mastokatu","Mastokatu 2","Mastgatan 2","","","",22,24.9674668165293,60.1647464973781,836,2113,670,876,2175,704.5
+159,"049","Annankatu","Annankatu","Annankatu","Annankatu 5","Annegatan 5","","","",16,24.9417379007102,60.1634749245163,1769,1657,604,1748,1849,667.5
+160,"050","Melkonkuja","Melkögränd","Melkonkuja","Melkonkuja 1","Melkögränd 1","","","",12,24.8861093999757,60.1498126916296,892,3016.5,865.5,891,2758,870
+161,"051","Itälahdenkatu","Österviksgatan","Itälahdenkatu","Itälahdenkatu 15","Österviksgatan 15","","","",12,24.8812501991249,60.1506599919369,1099,1574,566,1100,1364,515.5
+162,"052","Heikkilänaukio","Heikasplatsen","Heikkilänaukio","Heikkilänaukio 1","Heikasplatsen 1","","","",20,24.879315899385,60.1540762917607,1413,2156,687,1416,2437.5,780.5
+163,"053","Heikkiläntie","Heikasvägen","Heikkiläntie","Heikkiläntie 7","Heikasvägen 7","","","",12,24.8850653001728,60.1568169919509,1484,2948,842.5,1573,2699,769
+164,"054","Gyldenintie","Gyldénsvägen","Gyldenintie","Gyldenintie 2","Gyldénsvägen 2","","","",36,24.8766657996794,60.1583841916575,1905,1157,406,1888,1107,320
+165,"055","Puistokaari","Parksvängen","Puistokaari","Isokaari 30","Storsvängen 30","","","",16,24.8620200832623,60.1578749328793,990,1794,612,964,1836,633
+166,"056","Luoteisväylä","Nordvästpassagen","Luoteisväylä","Luoteisväylä 17","Nordvästpassagen 17","","","",12,24.8603118531172,60.1653590878524,1476,3719,1059,1493,3877,1096
+167,"057","Lauttasaaren ostoskeskus","Drumsö köpcentrum","Lauttasaari Shopping Center","Lauttasaarentie 26","Drumsövägen 26","","","",26,24.8828103623042,60.1604153459526,2274,2822,825.5,2224,3078,889.5
+168,"058","Lauttasaarensilta","Drumsö bro","Lauttasaarensilta","Lauttasaarentie 5","Drumsövägen 5","","","",20,24.8899154000946,60.1611858173089,2082,2862,821,2081,2742,813
+169,"059","Salmisaarenranta","Sundholmsstranden","Salmisaarenranta","Salmisaarenranta 9","Sundholmstranden 9","","","",28,24.9009334858186,60.164784170294,1785,1982,610,1814,1990,574.5
+170,"060","Kaapelitehdas","Kabelfabriken","Cable Factory","Tammasaarenlaituri 7","Märaholmskajen 7","","","",26,24.90279681,60.161252848,1054,2094,666,1055,2019,599
+171,"061","Länsisatamankatu","Västrahamnsgatan","Länsisatamankatu","Länsisatamankatu 19","Västrahamnsgatan 19","","","",16,24.9096920006591,60.158927591706,1386,2331,681,1379,2349,713
+172,"062","Välimerenkatu","Medelhavsgatan","Välimerenkatu","Välimerenkatu 9","Medelhavsgatan 9","","","",16,24.9162412896547,60.1592963414953,2321,2148,639,2288,2138.5,652
+173,"063","Jätkäsaarenlaituri","Busholmskajen","Jätkäsaarenlaituri","Jätkäsaarenlaituri 1","Busholmskajen 1","","","",24,24.9214896008223,60.1619310923994,3193,1762,565,3238,1796,583.5
+174,"064","Tyynenmerenkatu","Stillahavsgatan","Tyynenmerenkatu","Rionkatu 6","Stillhavsgatan 9","","","",20,24.9203435489542,60.1568077714966,3120,2042.5,612,3179,2053,622
+175,"065","Hernesaarenranta","Ärtholmsstranden","Hernesaarenranta","Hylkeenpyytäjänkatu 1a","Säljägargatan 1a","","","",40,24.9311978237832,60.1535144787873,1381,2440,856,1668,2397,825.5
+176,"066","Ehrenströmintie","Ehrenströmsvägen","Ehrenströmintie","Ehrenströmintie 3","Ehrenströmsvägen 3","","","",20,24.9592122677265,60.1552178275344,1005,2691,927,1008,2649.5,954.5
+177,"067","Perämiehenkatu","Styrmansgatan","Perämiehenkatu","Punavuorenkatu 22","Rödbergsgatan 22","","","",16,24.9340656851355,60.160087584362,1811,1666,551,1774,1776,621.5
+178,"068","Albertinkatu","Albertsgatan","Albertinkatu","Albertinkatu 17","Albertsgatan 17","","","",20,24.9368050446952,60.1618574790512,1882,1690,599,1852,1571,594.5
+179,"069","Kalevankatu","Kalevagatan","Kalevankatu","Lapinlahdenkatu 1","Lappviksgatan 1","","","",16,24.9314215703651,60.1656801793916,1851,1490,508,1854,1647,578
+180,"070","Sammonpuistikko","Samposkvären","Sammonpuistikko","Sammonkatu 3","Sampogatan 3","","","",14,24.9224112000483,60.1731472920894,1422,1592,523,1377,1732,585
+181,"071","Hietaniemenkatu","Sanduddsgatan","Hietaniemenkatu","Hiekkarannantie 9","Sandstrandsvägen 9","","","",24,24.9076704246974,60.1733331469852,2719,2275,774,2718,2305.5,728.5
+182,"072","Eteläinen Hesperiankatu","Södra Hesperiagatan","Eteläinen Hesperiankatu","Eteläinen Hesperiankatu 38","Södrä Hesperiagatan 38","","","",18,24.9155261617436,60.1755926611589,2352,2466,793.5,2371,2499,768
+183,"073","Kesäkatu","Sommargatan","Kesäkatu","Kesäkatu 8","Sommargatan 8","","","",14,24.91325039954,60.1792966924742,1162,2621,844.5,1143,2668,826
+184,"074","Rajasaarentie","Råholmsvägen","Rajasaarentie","Rajasaarentie 6","Råholmsvägen","","","",16,24.9110579020192,60.1831258058734,1562,2659.5,819.5,1561,2668,819
+185,"075","Korjaamo","Korjaamo","Korjaamo","Töölönkatu 51a","Tölögatan 51a","","","",20,24.919883700552,60.1838636970684,2307,2242,711,2311,2234,676
+186,"076","Olympiastadion","Olympiastadion","Olympic Stadium","Toivonkatu 3","Toivogatan 3","","","",20,24.924961245284,60.1844935075188,2583,2088,667,2592,2086,627
+187,"077","Nordenskiöldinaukio","Nordenskiöldsplatsen","Nordenskiöldinaukio","Linnankoskenkatu 15-17","Linnankoskigatan 15-17","","","",16,24.9172924251712,60.1852461094041,1808,2394,739,1791,2315,704
+188,"078","Messeniuksenkatu","Messeniusgatan","Messeniuksenkatu","Messeniuksenkatu 1a","Messeniusgatan 1a","","","",20,24.9180102002596,60.1878351921237,2277,2429,740,2273,2389,731
+189,"079","Uimastadion","Simstadion","Swimming Stadium","Hammarskjöldintie 5","Hammarsköljdsvägen 5","","","",18,24.9292125301786,60.1892523422817,902,2365.5,757,888,2582,793.5
+190,"080","Jäähalli","Ishall","Ice hall","Nordenskiöldinkatu 11","Nordenskiöldsgatan 11","","","",22,24.9204971353408,60.1893228039601,1636,2411,712,1645,2452,701
+191,"081","Stenbäckinkatu","Stenbäcksgatan","Stenbäckinkatu","Stenbäckinkatu 9","Stenbäcksgatan 9","","","",18,24.9123717007068,60.1883090916703,1110,2619.5,775,1114,2565,763.5
+192,"082","Töölöntulli","Tölötull","Töölöntulli","Mannerheimintie 112","Mannerheimvägen 112","","","",16,24.912893019047,60.1909233737999,2009,2513,743,1897,2608,780
+193,"083","Meilahden sairaala","Mejlans sjukhus","Meilahti Hospital","Haartmaninkatu 4","Haartmansgatan 4","","","",28,24.9083351006824,60.1902194919139,1372,2673.5,801,1340,2712,790
+194,"084","Paciuksenkatu","Paciusgatan","Paciuksenkatu","Mäntytie 2","Tallvägen 2","","","",14,24.8999261202594,60.1912061418589,1171,2558,780,1110,2819,844
+195,"085","Jalavatie","Almvägen","Jalavatie","Jalavatie 10","Almvägen 10","","","",16,24.9057885671904,60.1934470268502,1186,2942.5,844.5,1155,2938,861
+196,"086","Kuusitie","Granvägen","Kuusitie","Mannerheimintie 152","Mannerheimvägen 152","","","",24,24.9018996998812,60.1952451922329,1459,2864,859,1429,2964,893
+197,"087","Kustaankatu","Gustavsgatan","Kustaankatu","Kustaankatu 4b","Gustafsgatan 4b","","","",20,24.9559903941467,60.1882073042861,1206,2259,684.5,1077,2338,754
+198,"088","Kiskontie","Kiskovägen","Kiskontie","Mannerheimintie 99","Mannerheimvägen 99","","","",20,24.9012350212612,60.1990120683446,756,3098,915.5,738,3109.5,908
+199,"089","Tilkanvierto","Tilkkalänken","Tilkanvierto","Tilkankatu 41","Tilkgatan 41","","","",16,24.8992505554038,60.1975748220279,2215,2176,704,2230,2388,716.5
+200,"090","Paciuksenkaari","Paciussvängen","Paciuksenkaari","Johannesbergintie 6","Johannesbergsvägen 6","","","",20,24.8911179001253,60.1944474917836,1557,2973,898,1584,3170,945
+201,"091","Seurasaari","Fölisön","Seurasaari","Seurasaarentie 15","Fölisövägen 15","","","",22,24.8847643214706,60.1884345423222,1618,2940,966,1576,2833.5,864
+202,"092","Saunalahdentie","Bastuviksvägen","Saunalahdentie","Saunalahdentie 1","Bastuviksvägen 1","","","",8,24.8791652000743,60.1926665197597,826,3545,1021.5,827,4018,1193
+203,"093","Torpanranta","Torpanranta","Torpanranta","Laajalahdentie 1","Bredsvikvägen 1","","","",16,24.8713963007609,60.1948357920888,872,2968.5,983.5,921,2619,930
+204,"094","Laajalahden aukio","Bredviksplatsen","Laajalahden aukio","Munkkiniemen puistotie 21","Munksnäs allén 21","","","",20,24.8763012644261,60.1978706012264,2300,2817.5,867.5,2576,2625,786
+205,"095","Munkkiniemen aukio","Munksnäsplatsen","Munkkiniemen aukio","Munkkiniemen puistotie 1","Munksnäs allén 1","","","",18,24.8840193884533,60.1967237851281,1787,2750,836,1907,2916,838
+206,"096","Huopalahdentie","Hoplaksvägen","Huopalahdentie","Huopalahdentie 13","Hoplaksvägen 13","","","",20,24.8835764865762,60.199732919393,1285,2493,755,1386,2148,670.5
+207,"098","Ulvilantie","Ulfsbyvägen","Ulvilantie","Porintie 1","Björneborgsvägen","","","",12,24.8708784784714,60.2038687140902,674,1901,664,638,2248,731.5
+208,"099","Muusantori","Musans torg","Muusantori","Muusantori 5","Musanstorg 5","","","",12,24.8559544008311,60.207119292,634,2270,724.5,718,2083,614.5
+209,"100","Teljäntie","Täljevägen","Teljäntie","Ulvilantie 21","Ulfsbyvägen 21","","","",12,24.8686567195812,60.209690428765,674,2172,706.5,674,2397,793.5
+210,"101","Munkkivuoren ostoskeskus","Munkhöjdens köpcentrum","Munkkivuori Shopping Center","Huopalahdentie 20b","Hoplaksvägen 20b","","","",24,24.8798066035013,60.2059834138688,2025,1921,597,2037,2080,658
+211,"103","Vihdintie","Vichtisvägen","Vihdintie","Vihdintie 2","Vichtisvägen 2","","","",16,24.8895209008125,60.2089249922173,1159,2209,712,1154,2394,734.5
+212,"104","Kriikunakuja","Krikongränden","Kriikunakuja","Korppaanmäentie 26","Korpasbackavägen 26","","","",16,24.8916816998729,60.2056784923064,662,1921.5,616.5,658,2112,667
+213,"105","Tilkantori","Tilktorget","Tilkantori","Tilkantori 3","Tilktorget 3","","","",16,24.8933660254613,60.2027828953059,1241,2342,807,1268,2313,754.5
+214,"106","Korppaanmäentie","Korpasbackavägen","Korppaanmäentie","Mannerheimintie 170","Mannerheimvägen","","","",16,24.898929699376,60.2034734922503,883,2470,741,886,2177,646
+215,"107","Tenholantie","Tenalavägen","Tenholantie","Kiskontie 22","Kiskovägen 22","","","",18,24.9054367957033,60.202377405156,1114,2417,745,1115,2321,725
+216,"108","Radiokatu","Radiogatan","Radiokatu","Kuuluttajankatu 2","Hallåmansgatan 2","","","",12,24.9182184498931,60.2050064264488,339,2842,782,296,2635.5,832
+217,"109","Hertanmäenkatu","Hertabacksgatan","Hertanmäenkatu","Radiokuja 2","Radiogränden 2","","","",20,24.9223311437335,60.2026940388763,998,2563.5,757.5,826,2231,708
+218,"110","Maistraatintori","Magistratstorget","Maistraatintori","Pasilanraitio 10","Böletået 10","","","",20,24.9248733985577,60.1991509808314,1064,2687,758,1019,2644,797
+219,"111","Esterinportti","Estersporten","Esterinportti","Pasilanraitio 5","Böletået 5","","","",20,24.9267808000548,60.1975723919044,1826,2406,681,1726,2550,768.5
+220,"112","Rautatieläisenkatu","Järnvägsmannagatan","Rautatieläisenkatu","Ratapihantie 13","Bangårdsvägentie 13","","","",22,24.9332721002285,60.2014381920031,1649,2989,846,1679,2922,842
+221,"113","Pasilan asema","Böle station","Pasila railway station","Pasilan asema-aukio","Böle station","","","",40,24.932799079033,60.1982108580315,5152,2191,656,4370,2178,710
+222,"114","Ratapihantie","Bangårdsvägen","Ratapihantie","Ratapihantie 1","Bangårdsvägentie 1","","","",20,24.9366332542312,60.1964208157658,1137,2380,714,1100,2545.5,859
+223,"115","Venttiilikuja","Ventilgränden","Venttiilikuja","Venttiilikuja  1 & 2","Ventilgränden 1 & 2","","","",16,24.9415225602343,60.1941915204257,1493,2142,634,1447,2149,732
+224,"116","Linnanmäki","Borgbacken","Linnanmäki Amusement Park","Viipurinkatu 20","Viborgsgatan 20","","","",32,24.9401592995968,60.1911410923558,2643,2233,676,2440,2152.5,715.5
+225,"117","Brahen puistikko","Braheskvären","Brahen puistikko","Sturenkatu 12","Sturegatan 12","","","",12,24.9481257001872,60.1896657985504,1988,2032,637,1950,2072,715.5
+226,"118","Fleminginkatu","Flemingsgatan","Fleminginkatu","Aleksis Kiven katu 30","Aleksis Kivis gata 30","","","",22,24.952206700403,60.1895253157117,2359,1937,635,2266,1793,630.5
+227,"119","Gebhardinaukio","Gebhardsplatsen","Gebhardinaukio","Teollisuuskatu 3","Industrigatan 3","","","",20,24.9550767908172,60.1911804709255,848,1951,635,781,1907,662
+228,"120","Mäkelänkatu","Backasgatan","Mäkelänkatu","Mäkelänkatu 2","Backasgatan 2","","","",28,24.9633904702172,60.1896359907606,1047,2111,657,958,2121,695.5
+229,"121","Vilhonvuorenkatu","Vilhelmsbergsgatan","Vilhonvuorenkatu","Vilhonvuorenkatu 12","Vilhelmsbergsgatan 12","","","",16,24.967854123638,60.1864553029206,3039,2382,698,3098,2362,675
+230,"122","Lintulahdenkatu","Fågelviksgatan","Lintulahdenkatu","Lintulahdenkuja 6","Fågelviksgränden 6","","","",24,24.962063375375,60.1836809119419,2887,2211,662,2871,2121,633
+231,"123","Näkinsilta","Näckens bro","Näkinsilta","Sörnäisten rantatie 9","Sörnas strandväg 9","","","",24,24.9554449266327,60.179750209022,3002,2064,647.5,2986,2010,639
+232,"124","Isoisänsilta","Farfarsbron","Isoisänsilta","Capellan puistotie 2","Capellas allé 2","","","",18,24.9817926053222,60.1826518123339,3207,2514,827,3340,2370,770
+233,"125","Arielinkatu","Arielgatan","Arielinkatu","Englantilaisaukio","Englandsskvären","","","",16,24.9797385551711,60.1859217406831,2253,2613,825,2293,2542,761
+234,"126","Kalasatama (M)","Fiskehamnen (M)","Kalasatama (M)","Hermannin rantatie 2b","Hermanstads strandväg 2b","","","",24,24.977153892421,60.1875308427268,5284,2016.5,652,5567,2142,661
+235,"127","Teurastamo","Teurastamo","Teurastamo","Työpajankatu 2a","Verkstadsgatan 2a","","","",30,24.9711566503401,60.1896945837642,1757,2174,736,1815,2114,662
+236,"128","Päijänteentie","Päijännevägen","Päijänteentie","Päijänteentie 1","Päijännevägen 1","","","",14,24.9642238002852,60.1920575919922,822,1823,634,763,2162,763
+237,"129","Pernajantie","Pernåvägen","Pernajantie","Mäkelänkatu 25","Backasgatan 25","","","",20,24.9579782365195,60.1942276026523,1380,2180,684.5,1241,2086,712
+238,"130","Teollisuuskatu","Industrigatan","Teollisuuskatu","Teollisuuskatu 16","Industrigatan 16","","","",24,24.9487523997729,60.1934740103444,621,1978,658,600,1841.5,656.5
+239,"131","Elimäenkatu","Elimägatan","Elimäenkatu","Elimäenkatu 24","Elimägatan 24","","","",24,24.9476290451587,60.1962195625714,1105,2378,717,1090,2316,703.5
+240,"132","Hollolantie","Hollolavägen","Hollolantie","Hollolantie 2","Hollolavägen 2","","","",12,24.9546058093258,60.1958861886173,1000,2178,709,892,1677,633
+241,"133","Paavalinpuisto","Paulusparken","Paavalinpuisto","Hämeentie 96","Tavastvägen 96","","","",22,24.9614401060515,60.1974798068335,1603,1879,626,1557,1933,625
+242,"134","Haukilahdenkatu","Gäddviksgatan","Haukilahdenkatu","Haukilahdenkatu 6","Gäddviksgatan 6","","","",26,24.9676238234156,60.1985338962222,1923,2021,626,1954,2014.5,598.5
+243,"135","Velodrominrinne","Velodromsbrinken","Velodrominrinne","Mäkelänkatu 70","Backasgatan 70","","","",12,24.9441912064593,60.2010022969661,1154,2191.5,718,1158,2372,720.5
+244,"136","Sofianlehdonkatu","Sofielundsgatan","Sofianlehdonkatu","Isonniitynkatu 7","Storsvängen 7","","","",12,24.9513635992833,60.2032720921502,572,2048,665.5,571,1731,592
+245,"137","Arabian kauppakeskus","Arabia köpcentrum","Arabia Shopping Center","Hämeentie 111","Tavastvägen 111","","","",30,24.9665718240118,60.2027696318957,3239,2103,708,3302,2182,679
+246,"138","Arabiankatu","Arabiagatan","Arabiankatu","Arabiankatu 7","Arabiagatan 7","","","",22,24.9770790121958,60.2064915569171,1801,2686,871,1927,2623,786
+247,"139","Muotoilijankatu","Kairogatan","Kaironkatu","Arabiankatu 21","Tavastvägen 150","","","",16,24.9797040460124,60.2097104145027,892,2974,857.5,923,2944,786
+248,"140","Verkatehtaanpuisto","Klädesfabriksparken","Verkatehtaanpuisto","Hämeentie 159","Tavastvägen 159","","","",14,24.9797491905267,60.2136895158892,1420,3171.5,988.5,1400,3249,988
+249,"141","Intiankatu","Indiagatan","Intiankatu","Intiankatu 20","Indiagatan 20","","","",16,24.9676246411057,60.207840227695,1363,2350,708,1347,2346,692
+250,"142","Koskelantie","Forsbyvägen","Koskelantie","Sofianlehdonkatu 13","Sofielundsgatan 13","","","",14,24.946677279,60.207839984,1768,2444,778.5,1762,2326,745.5
+251,"143","Kuikkarinne","Kuikkarinne","Kuikkarinne","Isokaari 10","Storsvängen 10","","","",12,24.8694297861453,60.1570959878378,1042,2469,821.5,1026,2722.5,888.5
+252,"144","Käpyläntie","Kottbyvägen","Käpyläntie","Käpyläntie 1","Kottbyvägen 1","","","",14,24.9588108000086,60.2139042918024,1036,2219.5,699,995,2221,770
+253,"145","Pohjolankatu","Pohjolagatan","Pohjolankatu","Pohjolankatu 1","Pohjolagatan 1","","","",12,24.9437964005667,60.2134209918355,468,2283,706.5,442,2177,717
+254,"146","Pohjolanaukio","Pohjolaplatsen","Pohjolanaukio","Pohjolankatu 40","Pohjolagatan 40","","","",16,24.9543597785941,60.2171787502601,693,2221,699,671,2003,703
+255,"147","Käpylän asema","Kottby station","Käpylä station","Panuntie 4","Panuvägen 4","","","",14,24.9479499152249,60.2208033078251,739,2129,618,724,2389,759.5
+256,"148","Juhana Herttuan tie","Hertig Johans väg","Juhana Herttuan tie","Antti Korpin tie 3a","Anders Korps väg 3a","","","",16,24.9664522586218,60.2185249019981,958,2137,640,960,1843.5,635
+257,"149","Toinen linja","Andra linjen","Toinen linja","Toinen linja 25","Andra linjen 25","","","",22,24.9445685112105,60.1830009926511,1654,2162,635,1563,2162,688
+258,"150","Töölönlahden puisto","Tölöviksparken","Töölönlahden puisto","Karamzininranta 4","Karamzins strand  4","","","",24,24.9350784201451,60.1748578219656,2046,2274,735,2128,2448.5,739.5
+259,"161","Eteläesplanadi","Södra Esplanaden","Eteläesplanadi","Eteläesplanadi 14","Södrä Esplanaden 14","","","",34,24.9471504600595,60.1671998456303,1405,2024,673,1620,1909,637.5
+260,"162","Leppäsuonaukio","Alkärrsplatsen","Leppäsuonaukio","Leppäsuonaukio 1","Alkärrsplatsen 1","","","",28,24.9265784464228,60.1695846151592,1479,1620,508,1465,1815,587
+261,"163","Lehtisaarentie","Lövövägen","Lehtisaarentie","Liljasaarentie 1a","Liljeholmsvägen 1a","","","",12,24.8505039451831,60.1819482497591,1164,3051,928,1227,3730,1112
+262,"200","Länsiterminaali","Västra terminalen","West Terminal","Sammonlaituri","Sampokajen","","","",24,24.9152135431213,60.1504730320499,234,2671.5,776.5,231,2605,823
+263,"201","Länsisatamankuja","Västrahamnsgränden","Länsisatamankuja","Länsisatamankatu 26","Västrahamnsgatan 26","","","",14,24.9120898275496,60.1569514968019,2698,2241,651,2774,2103,640
+264,"202","Merihaka","Havshagen","Merihaka","Hakaniemenranta 10","Hagnäskajen 10","","","",16,24.9585285446676,60.1780749105533,1800,1956,616.5,1788,2036,621.5
+265,"203","Opastinsilta","Semaforbron","Opastinsilta","Opastinsilta 10","Semaforbron 10","","","",40,24.9381525773313,60.1992657652357,844,3065,841,773,3028,926
+266,"204","A.I. Virtasen aukio","A. I. Virtanens plats","A.I. Virtasen aukio","Gustaf Hällströmin katu 1","Gustaf Hällströms gata 1","","","",24,24.9620788508104,60.2055418168461,716,2416.5,718,651,2340,750
+267,"205","Ilmalan asema","Ilmala station","Ilmala Station","Ilmalantori 1","Ilmalatorget 1","","","",16,24.9222198886664,60.2066264297482,448,3300,896.5,323,3430,1030
+268,"206","Ruskeasuon varikko","Brunakärrs depå","Ruskeasuo depot","Mannerheimintie 117","Mannerheimvägen 117","","","",14,24.8986678907757,60.2076799515229,508,2393,678.5,499,2498,698
+269,"207","Vanha Viertotie","Gamla chaussén","Vanha Viertotie","Vanha Viertotie 23","Gamla chaussén 23","","","",16,24.8816602535719,60.2110752881999,984,2218,778,982,2274,711
+270,"208","Valimotie","Gjuterivägen","Valimotie","Valimotie 1","Gjuterivägen 1","","","",24,24.8765290693421,60.2159693222985,767,2244,677,794,2164,621.5
+271,"209","Takomotie","Smedjevägen","Takomotie","Takomotie 29","Smedjevägen 29","","","",14,24.8710464686467,60.2178996244041,740,2356,676.5,754,2590,727.5
+272,"210","Pajamäki","Smedjebacka","Pajamäki","Pajamäentie 12","Smedjebackavägen 12","","","",12,24.8556743832861,60.2188213176358,591,2766,748,585,2706,840
+273,"211","Haagan tori","Haga torg","Haagan tori","Haagan tori 1","Haga torg 1","","","",16,24.898930057033,60.2121115807155,843,3130,941,830,2938.5,871
+274,"212","Tunnelitie","Tunnelvägen","Tunnelitie","Tunnelitie 3","Tunnelvägen 3","","","",14,24.8995694064157,60.2166149334764,993,3175,935,970,2997,863
+275,"213","Huopalahden asema","Hoplaks station","Huopalahti Station","Huopalahden aseman itäinen raittisilta","Hoplaks stations östra järnvägsbro","","","",20,24.8950577369046,60.2180961357994,952,2741,762.5,920,2702,786
+276,"214","Valimon asema","Gjuteriets station","Valimo Station","Valimopolku 3","Gjuteristigen 3","","","",20,24.8758443985049,60.2223022514537,375,2460,671,372,1736,539
+277,"215","Pitäjänmäen asema","Sockenbacka station","Pitäjänmäki Station","Pitäjänmäentie 21","Sockenbackavägen 21","","","",16,24.8586292857926,60.2243090934475,468,2390,656.5,448,2490,714.5
+278,"216","Jännetie","Bågsträngsvägen","Jännetie","Konalantie 6","Kånalavägen 6","","","",12,24.8535714902996,60.2267575847976,475,2755,740,496,2664.5,802.5
+279,"217","Marttila","Martas","Marttila","Vihdintie 302","Vichtisvägen 302","","","",16,24.8732133049419,60.2271498086552,339,3252,954,343,3283,870
+280,"218","Pohjois-Haagan asema","Norra Haga station","Pohjois-Haaga Station","Pennikuja 2","Penninggränden 2","","","",16,24.8830806372706,60.2300717042706,747,2213,727,747,2127,674
+281,"219","Näyttelijäntie","Skådespelarvägen","Näyttelijäntie","Kaupintie 3","Krämärvägen 3","","","",16,24.887547040742,60.2328640962858,462,3259.5,980,462,2855,888.5
+282,"220","Ida Aalbergin tie","Ida Aalbergs väg","Ida Aalbergin tie","Näyttelijäntie 14","Skådespelarvägen 14","","","",18,24.8952023541771,60.2295326765972,650,2651,792,612,2783,891.5
+283,"221","Thalianaukio","Thaliaplatsen","Thalianaukio","Aino Ackten tie 1","Aino Acktés väg 1","","","",14,24.8947958642764,60.2253423108921,621,3128,980,630,3179,975
+284,"222","Huovitie","Knektvägen","Huovitie","Huovitie 10","Knektvägen 10","","","",12,24.9032866466572,60.2219755272546,592,2822.5,857.5,571,2791,809
+285,"223","Hämeenlinnanväylä","Tavastehusleden","Hämeenlinnanväylä","Teuvo Pakkalan tie 2","Eliel Saarinens väg 2","","","",14,24.9028322456731,60.2274510674778,0,0,0,0,0,0
+286,"224","Vesakkotie","Snårvägen","Vesakkotie","Männikkötie 11","Talldungevägen 11","","","",12,24.9266153826484,60.2279595153713,441,3624,1018,453,4012,1090
+287,"225","Maunula","Månsas","Maunula","Maunulanmäki 2","Månsasbacken 2","","","",16,24.9325030021006,60.2303828796011,345,3785,1056,344,3537,1014
+288,"226","Lepolantie","Lepolavägen","Lepolantie","Lepolantie 61","Lepolavägen 61","","","",14,24.9286046557082,60.2390854029504,323,4647,1309,370,4459,1283
+289,"227","Kylävoudintie","Byfogdevägen","Kylävoudintie","Kylävoudintie 6","Byfogdevägen 6","","","",14,24.9525612440734,60.2244037765729,428,3039,915.5,397,3003,842
+290,"228","Kustaankartano","Gustafsgård","Kustaankartano","Maapadontie 3","Jorddammsvägen 3","","","",20,24.9487651621964,60.2307028618145,332,2423,807,265,1876,647
+291,"229","Käskynhaltijantie","Ståthållarvägen","Käskynhaltijantie","Hirsipadontie 2","Timmerdammsvägen 2","","","",18,24.957934116941,60.2332319429452,290,1740.5,622,255,1780,635
+292,"230","Mäkitorpantie","Kullatorpsvägen","Mäkitorpantie","Kylänvanhimmantie 29","Byäldstevägen 29","","","",18,24.9603356197765,60.2285300629765,161,3087,1011,160,2838,900
+293,"231","Siltavoudintie","Brofogdegränd","Siltavoudintie","Käskynhaltijantie 22","Ståthållarvägen 22","","","",16,24.9649692401006,60.2337172192606,373,2841,909,351,3326,1019
+294,"232","Oulunkylän asema","Åggelby station","Oulunkylä Station","Oulunkyläntori 2","Åggelbytorget 2","","","",14,24.9667185624345,60.2291001546027,686,2164,706,689,2054,642
+295,"233","Kirkkoherrantie","Kyrkoherdevägen","Kirkkoherrantie","Kirkkoherrantie 5","Kyrkoherdevägen 5","","","",10,24.9728193757834,60.2249303574235,305,2558,827,301,2448,962
+296,"234","Otto Brandtin tie","Otto Brandts väg","Otto Brandtin tie","Tulvaniityntie 2","Flödängsvägen 2","","","",20,24.9781389181685,60.2317840575086,631,3068,949,699,2938,867
+297,"235","Katariina Saksilaisen katu","Katarina av Sachsens gata","Katariina Saksilaisen katu","Katariina Saksilaisen katu 6","Katarina av Sachsens gata 6","","","",16,24.9844208812225,60.2172068185826,754,3144,948,789,2856,923
+298,"236","Hernepellontie","Ärtåkersvägen","Hernepellontie","Harjannetie 44","Krönvägen 44","","","",14,24.9886129703087,60.2242412608413,420,3188,899,418,3132,872.5
+299,"237","Aulangontie","Aulankovägen","Aulangontie","Harjannetie 2","Krönvägen 2","","","",16,24.9985804201601,60.2302596315427,335,3232,1026,308,3280,953.5
+300,"238","Pihlajamäki","Rönnbacka","Pihlajamäki","Meripihkatie 3","Bärnstensvägen 3","","","",16,25.0103139042596,60.2345785634218,417,2211,765,394,2310,762.5
+301,"239","Viikin tiedepuisto","Viks forskarpark","Viikki Science Park","Viikintori","Vikstorget","","","",28,25.0100484016428,60.2275394155784,1465,3289,969,1454,3484.5,957
+302,"240","Viikin normaalikoulu","Normalskolan i Vik","Viikki Teacher Training School","Kevättori","Vårtorget","","","",20,25.0275940265593,60.2274649666156,750,3635,1042.5,825,3428,930
+303,"241","Agronominkatu","Agronomgatan","Agronominkatu","Latokartanontori","Ladugårdstorget","","","",24,25.0328574018929,60.2340530021105,494,2880,901,547,2724,869
+304,"242","Von Daehnin katu","Von Daehns gata","Von Daehnin katu","Von Daehnin katu 14","Von Daehns gata 14","","","",14,25.0436178847114,60.2303443513437,203,2623,826,218,2579,807.5
+305,"243","Mustikkamaa","Blåbärslandet","Mustikkamaa","Mustikkamaantie 8","Blåbärslandsvägen 8","","","",20,24.992105405271,60.181844391759,1181,2301,771,1181,2260,775
+306,"244","Relanderinaukio","Relandersplatsen","Relanderinaukio","Ståhlbergintie 6","Ståhlbergsvägen 6","","","",16,25.0058079125449,60.1858547331594,747,2391,774,739,2734,835
+307,"245","Kulosaari (M)","Brändö (M)","Kulosaari (M)","Ukko-Pekan porras","Ukko-Pekkas trappstig","","","",20,25.0064636871854,60.1889293103178,1472,3103.5,922,1460,3767,1099
+308,"246","Tupasaarentie","Stugövägen","Tupasaarentie","Risto Rytin tie 30","Risto Rytis väg 30","","","",12,25.0153289779219,60.1878871226314,475,2895,953,467,2746,874
+309,"247","Haakoninlahdenkatu","Håkanviksgatan","Haakoninlahdenkatu","Koirasaarentie 33","Hundholmsvägen 33","","","",16,25.0208609553502,60.1688685506822,276,3591,1124,286,2630.5,880.5
+310,"248","Gunillantie","Gunillavägen","Gunillantie","Koirasaarentie 32","Hundholmsvägen 32","","","",16,25.0330122371046,60.1719938510831,407,2785,816,431,2115,854
+311,"249","Isosaarentie","Mjölövägen","Isosaarentie","Köökarinkuja 3","Kökargränden 3","","","",14,25.0450147987503,60.1755054994249,471,2830,778,460,2793,802
+312,"250","Reiherintie","Reihersvägen","Reiherintie","Laajasalontie 13","Degerövägen 13","","","",12,25.0474962642387,60.1677304952092,302,3371,917.5,296,2307.5,865
+313,"251","Laajasalon ostoskeskus","Degerö köpcentrum","Laajasalo shopping center","Yliskylän puistokatu 4","Uppby parkgata 4","","","",16,25.0519120121374,60.1800091502319,871,2091,618,875,2235,654
+314,"252","Humalniementie","Humleuddsvägen","Humalniementie","Ryytikuja 2","Kryddgränden 2","","","",14,25.0530603555751,60.1837062881609,336,2306,726,321,2242,745
+315,"253","Tammisalon aukio","Tammelundsplatsen","Tammisalon aukio","Väylänrinne 1","Båtledsbrinken 1","","","",20,25.0610604378889,60.1916636460758,340,2498.5,854.5,346,2410,773.5
+316,"254","Agnetankuja","Agnetagränden","Agnetankuja","Laivalahdenkaari 24","Båtviksbågen 24","","","",16,25.0365006704009,60.1872113457581,690,1793,686,712,1460.5,502
+317,"255","Laivalahden puistotie","Båtsviksallén","Laivalahden puistotie","Laivalahden puistotie 10","Båtsvikallén 10","","","",16,25.0313242435422,60.1879616899796,827,1352,537,848,1291.835,448.5
+318,"256","Herttoniemenranta","Hertonäs strand","Herttoniemenranta","Paasivaarankatu 1","Paasivaaragatan 1","","","",14,25.0261074895481,60.1902241178364,728,3208.5,962.5,714,3082,892
+319,"257","Margareetankuja","Margaretagränden","Margareetankuja","Margareetankuja 4","Margaretagränden 4","","","",14,25.0372267110383,60.1910267485051,372,1839.5,660,355,1521,518
+320,"258","Abraham Wetterin tie","Abraham Wetters väg","Abraham Wetterin tie","Sorvaajankatu 1","Svarvaregatan 1","","","",16,25.0426533906378,60.1927661994999,872,2274.5,852,836,2493,873.5
+321,"259","Petter Wetterin tie","Petter Wetters väg","Petter Wetterin tie","Hitsaajankatu 16","Svetsargatan 16","","","",20,25.0310806077186,60.1931499986426,2479,2282,726,2523,2280,731
+322,"260","Herttoniemi (M)","Hertonäs (M)","Herttoniemi (M)","Hiihtäjäntie 2","Skidlöparvägen 2","","","",24,25.0289074357313,60.1946246004701,1516,2055,683.5,1487,2005,628
+323,"261","Asentajanpuisto","Montörsparken","Asentajanpuisto","Asentajankatu 8","Montörsgatan 8","","","",16,25.0424582865295,60.1991534842401,487,2558,856,478,2656.5,776.5
+324,"262","Siilitie (M)","Igelkottsvägen (M)","Siilitie (M)","Siilitie 2","Igelkottsvägen 2","","","",22,25.0451499077688,60.2059412826664,959,1742,556,963,1304,388
+325,"263","Herttoniemen kirkko","Hertonäs kyrka","Herttoniemi Church","Karhutie 11","Björnvägen 11","","","",16,25.0322254160118,60.1984720937284,366,1933,665,336,2200.5,884
+326,"264","Eränkävijäntori","Jägartorget","Eränkävijäntori","Hiihtomäentie 39","Skidbacksvägen 39","","","",16,25.0336255327162,60.2045796219055,520,1489,476.5,483,2003,712
+327,"265","Siilitie 9","Igelkottsvägen 9","Siilitie 9","Siilitie 12","Igelkottsvägen 12","","","",16,25.0375268074421,60.209453145538,591,2237,712,576,2043,682
+328,"266","Siilitie 13","Igelkottsvägen 13","Siilitie 13","Sopulirinne 2","Lemmelbrinken 2","","","",14,25.0438403800837,60.2150936967815,206,2106,516,188,2492.5,751
+329,"267","Roihupelto","Kasåkern","Roihupelto","Viilarintie 6","Filarvägen 6","","","",16,25.0550878014734,60.2093671231044,600,2164,637,618,2133,611.5
+330,"268","Porolahden koulu","Porovikens skola","Porolahti school","Roihuvuorentie 6b","Kasbergsvägen 6b","","","",14,25.0535809447117,60.1955233353498,736,2281,806,846,2205,837.5
+331,"269","Peukaloisentie","Tummelitens väg","Peukaloisentie","Untuvaisentie 2","Dunungens väg 2","","","",12,25.0585469211702,60.1987082869369,345,2289,744,327,2191,776
+332,"270","Tulisuontie","Kaskärrsvägen","Tulisuontie","Roihuvuorentie 25","Kasbergsvägen 25","","","",16,25.0600755207072,60.2020741769704,507,1901,574,473,2372,849
+333,"271","Prinsessantie","Prinsessvägen","Prinsessantie","Prinsessantie 2","Prinsessvägen 2","","","",16,25.059863346683,60.2062943134753,228,1211,395,212,1567.5,528.5
+334,"272","Marjaniementie","Maruddsvägen","Marjaniementie","Rakettipolku 5","Raketstigen 5","","","",16,25.076069360708,60.2043248841061,630,1729,559.5,726,1173,451.5
+335,"274","Voikukantie","Smörblommevägen","Voikukantie","Kauppakartanonkatu 10","Handelshusgatan 10","","","",16,25.0867813029403,60.2090159546746,896,2085,679,899,2291,688
+336,"275","Itäkeskus (M)","Östra centrum (M)","Itäkeskus (M)","Tallinnanaukio 2","Revalsplanen 2","","","",28,25.0759744433382,60.2096186210914,1138,1509.5,489,1126,1571,464
+337,"276","Puotinharju","Botbyhöjden","Puotinharju","Turunlinnantie 4","Åbohusvägen 4","","","",24,25.0824161004374,60.2125560259595,392,2115,747,382,2057,661
+338,"277","Marjaniemi","Marudd","Marjaniemi","Marjaniementie 23","Maruddsvägen 23","","","",14,25.0863443649103,60.2036199297435,189,3065,961,205,2607,802
+339,"278","Puotilantie","Botbygårdsvägen","Puotilantie","Puotilantie 4","Botbygårdsvägen 4","","","",14,25.1004180257133,60.2090787864561,362,1113,381.5,383,1400,452
+340,"279","Puotinkylän kartano","Botby gård","Puotinkylä Manor","Puotilantie 12","Botbygårdsvägen 12","","","",16,25.1062099916086,60.2125374414988,227,1413,479,249,1334,462
+341,"280","Puotilan ostoskeskus","Botby köpcentrum","Puotila shopping center","Klaavuntie 11","Klåvusvägen 11","","","",14,25.0955595128971,60.2127005636951,441,1491,539,449,1533,500
+342,"281","Puotila (M)","Botby gård (M)","Puotila (M)","Vanhanlinnantori","Vanhalinnatorget","","","",20,25.0910915854205,60.2148242972699,526,1403,526,590,1225,431.5
+343,"282","Karhulantie","Karhulavägen","Karhulantie","Kiviportintie 2","Stenportsvägen 2","","","",12,25.1022019197012,60.2187064270041,309,1343,436,305,1472,496
+344,"283","Alakiventie","Understensvägen","Alakiventie","Alakiventie 4","Understensvägen 4","","","",14,25.0772822325582,60.2198397844715,191,1915,715,180,1781.5,594.5
+345,"284","Myllypuro (M)","Kvarnbäcken (M)","Myllypuro (M)","Kivensilmänkuja 1","Kvarnögsgränden 1","","","",28,25.0753901685843,60.2240882550803,584,2033,630.5,538,1865,641.5
+346,"285","Orpaanporras","Lättan","Orpaanporras","Orpaanporras 14","Lättan 14","","","",14,25.0654178214231,60.22354882948,364,1144,482,328,1699.5,696.5
+347,"286","Mamsellimyllynkatu","Mamsellskvarnsgatan","Mamsellimyllynkatu","Mamsellimyllynkatu 26","Mamsellkvarnsgatan 26","","","",16,25.0591030723076,60.2182457763173,249,1611,527,242,1921,772.5
+348,"290","Vallilan varikko","Vallgårds depå","Vallilan varikko","Hämeentie 86","Tavastvägen 86","","","",20,24.9628231422149,60.1952459460233,701,1968,619,594,1974,672
+349,"291","Itäkeskus Metrovarikko","Östrä Centrum depå","Itäkeskus Metrovarikko","Metrovarikonkuja 6","Metrodepågränden 6","","","",16,25.0657818190343,60.2114607347613,290,871,275,268,865,268.5
+350,"292","Koskelan varikko","Forsby depå","Koskelan varikko","Valtimontie 10","Valtimovägen 10","","","",16,24.9698571193553,60.2125872907979,596,2680.5,790,590,2691,716.5
+351,"293","Korkeasaari","Högholmen","Korkeasaari","Mustikkamaanpolku 12","Blåbärslandsstigen 12","","","",16,24.9825269338023,60.1799061320186,697,1963,737,686,1874,647.5
+352,"294","Postipuisto","Postipuisto","Postipuisto","Niittylänpolku 16","Ängsskogsstigen 16","","","",18,24.9337369553808,60.2203012590912,463,2809,851,455,2993,912
+353,"301","Aurinkotuulenkatu","Solvindsgatan","Aurinkotuulenkatu","Solvikinkatu 21","Solviksgatan 21","","","",30,25.1593463483962,60.202773395376,356,1732,796.5,365,1933,735
+354,"302","Sumukuja","Dimgränden","Sumukuja","Sumukuja 2","Dimgränden 2","","","",18,25.1584093750563,60.2054467315293,213,1599,736,211,1890,785
+355,"303","Leikosaarentie","Lekholmsvägen","Leikosaarentie","Leikosaarentie 25","Lekholmsvägen 25","","","",16,25.1515462608624,60.2046812958719,201,2201,738,180,2164,769.5
+356,"304","Aurinkolahdenaukio","Solviksplatsen","Aurinkolahdenaukio","Aurinkoranta 8","Solstranden 8","","","",24,25.1501135293384,60.2011360782064,201,1999,830,247,1545,725
+357,"305","Kalkkihiekantie","Kalksandsvägen","Kalkkihiekantie","Kalkkihiekantie 1","Kalksandsvägen 1","","","",16,25.1430402936212,60.202124196154,287,1029,411,337,871,373
+358,"306","Kauppakeskus Columbus","Köpcentrum Columbus","Shopping Center Columbus","Valkopaadentie 1","Vithällsvägen 1","","","",20,25.1455043565057,60.2063719022092,410,1170,379.5,402,1153.5,424.5
+359,"315","Vuosaaren liikuntapuisto","Nordsjö idrottspark","Vuosaaren liikuntapuisto","Pallokuja 4","Bollgränden 4","","","",18,25.1534645734222,60.2122976062757,91,1076,506,84,1228,488
+360,"308","Mosaiikkitori","Mosaiktorget","Mosaiikkitori","Mosaiikkitori 1","Mosaiktorget 1","","","",24,25.143852587603,60.2079753561922,561,1386,400,540,1393,401.5
+361,"309","Kaivonkatsojanpuisto","Brunnsökarparken","Kaivonkatsojanpuisto","Kaivonkatsojantie 5","Brunnsökarvägen 5","","","",18,25.1359993335263,60.2044047701442,246,1408.5,484.5,244,1226,483
+362,"310","Halkaisijantie","Klyvarvägen","Halkaisijantie","Halkaisijantie 4","Klyvarvägen 4","","","",18,25.1279098203443,60.2023869312805,187,2178,601,166,1817.5,675.5
+363,"311","Ramsinniementie","Ramsöuddsvägen","Ramsinniementie","Ramsinniementie 1","Ramsöuddsvägen 1","","","",18,25.1199060794359,60.1995636503578,338,1771,559.5,311,1684,567
+364,"312","Meri-Rastilan tori","Havsrastböletorget","Meri-Rastilan tori","Meri-Rastilan kuja 2","Havsrastbölegränden 2","","","",16,25.1194224144705,60.2041542257304,263,2064,636,260,2252,751
+365,"313","Rastila (M)","Rastnöle (M)","Rastila (M)","Karavaanisilta 3","Karavanbron 3","","","",16,25.1201408621083,60.2055354689175,492,2265,727.5,478,2197,690.5
+366,"314","Lokitie","Loggvägen","Lokitie","Vuosaarentie 1","Nordsjövägen 1","","","",18,25.1365036011866,60.2095580685415,190,1735,622,186,1536,567.5
+367,"316","Punakiventie","Rödstensvägen","Punakiventie","Punakiventie 12","Rödstensvägen 12","","","",16,25.1467500568672,60.2140014852962,149,953,373,143,1027,327
+368,"317","Haapasaarentie","Aspholmsvägen","Haapasaarentie","Marielundinaukio 1","Marielundsplatsen 1","","","",18,25.146787178183,60.2187766341847,168,1539,615.5,179,1482,488
+369,"318","Vuosaaren puistopolku","Nordsjö parkstig","Vuosaaren puistopolku","Mustalahdenpolku 2","Svartviksstigen 2","","","",14,25.1410953624725,60.221320897051,295,1748,688,289,1727,667
+370,"319","Purjetie","Segelvägen","Purjetie","Kallvikintie","Kallviksvägen","","","",18,25.1338286912921,60.2196483224979,171,2262,664,166,1702,567.5
+371,"320","Koukkusaarentie","Krokholmsvägen","Koukkusaarentie","Kallvikintie","Kallviksvägen","","","",16,25.1342325127583,60.213980722047,251,1237,440,245,1402,501
+372,"321","Vartioharjuntie","Botåsvägen","Vartioharjuntie","Vartioharjuntie 13","Botåsvägen 13","","","",14,25.110914414719,60.2208894708644,43,1449,535,42,1497.5,642
+373,"322","Rukatunturintie","Rukatunturivägen","Rukatunturintie","Mellunmäentie 27","Mellungsbackavägen 27","","","",14,25.1275969785102,60.2312813452731,49,3016,863,53,2981,924
+374,"323","Sallatunturintie","Sallatunturivägen","Sallatunturintie","Sallatunturintie 2","Sallatunturivägen 2","","","",16,25.118300016596,60.2367409143469,29,3653,1009,24,4532.5,1171
+375,"325","Mellunmäki (M)","Mellungsbacka (M)","Mellunmäki (M)","Pallaksentie 3","Pallasvägen 3","","","",20,25.1098747367064,60.2385353540219,66,1899.5,836,68,3200.5,759.5
+376,"324","Sinkilätie","Märlvägen","Sinkilätie","Untamalantie 2","Untamalavägen 2","","","",16,25.1110602327979,60.2329614527257,36,2093.5,850,32,895,307
+377,"327","Humikkalankuja","Humikkalagränd","Humikkalankuja","Rintinpolku 2","Grindstigen 2","","","",16,25.0900641525363,60.2298249948271,28,2423.5,876.5,24,2537,831.5
+378,"328","Lallukankuja","Lallukkagränden","Lallukankuja","Lallukankuja 1","Lallukkagränden 1","","","",12,25.082971174464,60.2235265780465,34,2702,776,27,3575,1129
+379,"329","Kurkimäki","Tranbacka","Kurkimäki","Kurkimäentie 3","Tranbackavägen 3","","","",16,25.0716416497357,60.2282903943644,44,2161,724.5,45,1275,330
+380,"330","Kontula (M)","Gårdsbacka (M)","Kontula (M)","Kontulankaari 1","Gårdsbackabågen 1","","","",20,25.0826095549619,60.2360953526154,192,1161.5,388.5,176,1301.5,479
+381,"326","Tuukkalantie","Tuukkalavägen","Tuukkalantie","Aarteenetsijäntie 10","Skattsökarvägen 10","","","",16,25.1007232150956,60.2388442456374,38,2156,1028,36,1281.5,761
+382,"331","Lettopolku","Gungflystigen","Lettopolku","Lettopolku 2","Gungflystigen 2","","","",16,25.0855297731565,60.240913939764,26,2660.5,826.5,31,869,409
+383,"332","Kontulankaari","Gårdsbackabågen","Kontulankaari","Kontulankaari 7","Gårdsbackabågen 7","","","",16,25.076226580763,60.2438416352054,39,1494,617,35,1366,547
+384,"333","Kivikonkaari","Stensbölebågen","Kivikonkaari","Kontulankaari 8, toinen puoli","Gårdsbackabågen 8, andra sidan","","","",14,25.0746433427518,60.2399042915928,76,597,246.5,68,584,261
+385,"334","Varustuksentie","Rustningsvägen","Varustuksentie","Varustuksentie 1","Rustningsvägen 1","","","",14,25.0668572558023,60.2391310073666,55,1157,381,47,1114,324
+386,"335","Kurkimäentie","Tranbackavägen","Kurkimäentie","Kivikonkaari 30","Stensbölebågen 30","","","",16,25.0626083649392,60.2331943880568,73,1772,746,74,1944.5,686
+387,"336","Kivikonlaita","Stensbölekanten","Kivikonlaita","Kivikonlaita 2","Stensbölekanten 2","","","",16,25.0549152254879,60.230462178329,57,1794,574,44,2038,742
+388,"337","Kivikon liikuntapuisto","Stensböle idrottspark","Kivikko sports park","Savikiekontie 6","Lerduvevägen 6","","","",16,25.0524695830581,60.23703581972,42,2358.5,1007.5,35,2068,520
+389,"338","Jakomäentie","Jakobackavägen","Jakomäentie","Jakomäentie 18","Jakobackavägen 18","","","",16,25.0743775866131,60.2537712252939,3,2455,685,6,2002.5,633
+390,"340","Jakomäki","Jakobacka","Jakomäki","Jakomäenkuja 2","Jakobackagränden 2","","","",16,25.0759055985793,60.2610194104155,11,4057,1041,14,4760,1055
+391,"339","Alppikylä","Alpbyn","Alppikylä","Tattariharjuntie 51","Tattaråsvägen 51","","","",14,25.0648942053969,60.259431119227,3,4698,1682,3,4402,1103
+392,"341","Heikinlaakso","Henriksdal","Heikinlaakso","Vanha Porvoontie 32","Gamla Borgåvägen 32","","","",16,25.0727127107009,60.2701965544061,3,2630,550,4,2776.5,717
+393,"342","Puistolan VPK","Parkstads FBK","Puistolan VPK","Puistolan raitti 5","Parkstads bygata 5","","","",18,25.0575355661699,60.2700856600164,5,2068,804,7,2150,801
+394,"343","Puistolantori","Parkstads torg","Puistolantori","Puistolantori 1","Parkstads torg 1","","","",12,25.0458546004102,60.2743699271658,3,931,371,8,2757,995.5
+395,"344","Puistolan asema","Parkstad järnvägsstation","Puistolan asema","Tapulikaupungintie 1","Stapelstadsvägen 1","","","",16,25.0343501212405,60.2751896029642,33,2662,829,33,1866,485
+396,"346","Maatullinkuja","Landtullsgränden","Maatullinkuja","Maatullinkuja 17","Landtullsgränden 17","","","",18,25.0246919817259,60.2762367892689,32,1624,675.5,25,1259,593
+397,"347","Sateenkaarentie","Regnbågsvägen","Sateenkaarentie","Suutarilantie 60","Skomakarbölevägen 60","","","",18,25.0110629825049,60.2807560752423,4,1969,656.5,7,2211,694
+398,"348","Siltamäki","Brobacka","Siltamäki","Jousimiehentie 3","Skyttens väg 3","","","",12,24.9893966166804,60.2744670938261,21,3073,1251,29,4116,1226
+399,"349","Töyrynummentie","Lidmalmsvägen","Töyrynummentie","Töyrynummentie 2","Lidmalmsvägen 2","","","",16,25.0039702918602,60.2719623839468,17,2532,963,14,3968.5,1265
+400,"350","Töyrynummi","Lidamalmen","Töyrynummi","Pertunpellontie 4","Bertåkersvägen 4","","","",14,24.9929902179008,60.2671467662216,9,2378,759,11,3132,1181
+401,"351","Kotinummentie","Hemmalmsvägen","Kotinummentie","Kotinummentie 68","Hemmalmsvägen 68","","","",16,25.0135723691851,60.2675063004499,30,2074,628,26,1892.5,621.5
+402,"345","Porvarintie","Borgarvägen","Porvarintie","Porvarintie 8-10","Borgarvägen 8-10","","","",16,25.032655333,60.27189034,3,567,271,1,914,445
+403,"353","Helluntairaitti","Pingststråket","Helluntairaitti","Tasankotie 14","Slättvägen 14","","","",20,25.0368876017095,60.2632142978322,114,2968,1157.5,129,2813,1055
+404,"352","Tapanilan asema","Mosabacka järnvägsstation","Tapanila railway station","Sompiontori 1","Sompiotorget 1","","","",12,25.0281239739891,60.2633039538104,35,2178,657,33,2205,723
+405,"354","Saniaiskuja","Ormbunksgränden","Saniaiskuja","Saniaiskuja 1","Ormbunksgränden 1","","","",16,25.0290905800296,60.25909156602,9,1553,438,10,4429.5,1179.5
+406,"355","Halmetie","Brännvägen","Halmetie","Vanha Tapaninlantie 70","Gamla Staffansbyvägen 70","","","",16,25.0176577469294,60.2609068068142,27,1459,470,24,1337,470
+407,"356","Laulurastaantie","Trastvägen","Laulurastaantie","Laulurastaantie 25","Trastvägen 25","","","",14,25.0033102423416,60.2608846521727,21,1457,506,21,1165,427
+408,"357","Vanha Tapanilantie","Gamla Staffansbyvägen","Vanha Tapanilantie","Kirkonkyläntie 79","Kyrkobyvägen 79","","","",16,24.9897538768656,60.2596990442275,25,3936,1121,29,2860,831
+409,"358","Syystie","Höstvägen","Syystie","Kirkonkyläntie 34","Kyrkobyvägen 34","","","",18,24.9986055764439,60.256671174374,166,3344.5,931.5,155,3331,949
+410,"359","Malmin sairaala","Malms sjukhus","Malmi Hospital","Kirkonkyläntie 23","Kyrkobyvägen 23","","","",16,25.0028280196256,60.2541586216461,64,1405.5,495.5,61,486,248
+411,"360","Malmin asema","Malm järnvägsstation","Malmi railway station","Ylä-Malmin tori 3","Övre Malms torg 3","","","",24,25.0091215694658,60.2523255258372,223,1255,429,205,1266,581
+412,"361","Huhtakuja","Fallåkersgränden","Huhtakuja","Kotinummentie 5","Hemmalmsvägen 5","","","",16,25.0131080169475,60.2575633298897,11,749,323,13,2044,840
+413,"362","Teerisuontie","Orrmossevägen","Teerisuontie","Teerisuontie 27","Orrmossevägen 27","","","",14,25.0214900833646,60.2533940877891,118,2847,917.5,119,1594,660
+414,"364","Ala-Malmin tori","Nedre Malms torg","Ala-Malmin tori","Pikkalankatu 5","Pickalagatan 5","","","",20,25.0132371443462,60.2503063500603,272,2688,794,274,2625.5,763
+415,"363","Väärämäentie","Vindobackavägen","Väärämäentie","Väärämäentie 2-4","Vindobackavägen 2-4","","","",12,25.0297267023462,60.2426928298539,76,2535,786.5,66,2260.5,797
+416,"365","Karviaistie","Stickelvägen","Karviaistie","Karviaistie 3","Stickelvägen 3","","","",16,25.0078604417066,60.2468453049551,107,1347,500,103,1815,600
+417,"366","Tilketori","Drevtorget","Tilketori","Tilketori 1","Drevtorget 1","","","",20,25.0039930501515,60.2498265610789,111,2987,1142,123,2942,897
+418,"367","Karhusuontie","Björnkärrsvägen","Karhusuontie","Karhusuontie 27","Björnkärrsvägen 27","","","",14,24.9870649315623,60.2517795830055,0,0,0,0,0,0
+419,"372","Jokipellontie","Åfältsvägen","Jokipellontie","Jokipellontie 10","Åfältsvägen 10","","","",16,24.9833214791834,60.2452177923159,0,0,0,0,0,0
+420,"368","Pukinmäen liikuntapuisto","Bocksbacka idrottspark","Pukinmäki sports park","Kenttätie 10","Fältvägen 10","","","",14,24.9917239060614,60.2477323351629,0,0,0,0,0,0
+421,"369","Pukinmäen asema","Bocksbacka järnvägsstation","Pukinmäki railway station","Pukinmäenaukio 4","Bocksbackaplanen 4","","","",16,24.9939952300621,60.2430864481668,0,0,0,0,0,0
+422,"370","Rapakiventie","Örstensvägen","Rapakiventie","Lucina Hagmanin kuja 1","Lucina Hagmans gränd 1","","","",16,25.0013676173171,60.2393196827549,215,3546,1160,208,3513,1187
+423,"391","Tollinpolku","Tollsstigen","Tollinpolku","Luutnantinpolku 7a","Juustensvägen 4","","","",12,24.8677110166808,60.245908525041,0,0,0,0,0,0
+424,"373","Mikkolantie","Mickelsvägen","Mikkolantie","Mikkolantie 12","Mickelsvägen 12","","","",16,24.9715442521575,60.2355666358133,1,2517,1168,1,6444,1357
+425,"374","Etupellonpuisto","Framåkersparken","Etupellonpuisto","Yhdyskunnantie 22","Samhällsvägen 22","","","",18,24.95944937493,60.2419862673955,0,0,0,0,0,0
+426,"375","Piikintie","Piksvägen","Piikintie","Yhdyskunnantie 54","Samhällsvägen 54","","","",12,24.9581440446396,60.2488559062646,0,0,0,0,0,0
+427,"376","Torpparinmäentie","Torparbacksvägen","Torpparinmäentie","Kuusmiehenkaari 5","Sexmansbågen 5","","","",14,24.9447682689237,60.2568807091704,46,4873.5,1397.5,49,4353,1207
+428,"379","Paloheinän kirjasto","Svedängens bibliotek","Paloheinän kirjasto","Paloheinäntie 22","Svedängsvägen 22","","","",18,24.9416682057603,60.2495097085073,34,4372,1148,42,3836,1085
+429,"377","Paloheinän maja","Svedängens stuga","Paloheinän maja","Pakilantie 124","Baggbölevägen 124","","","",20,24.9183008944604,60.2552356088463,60,3393.5,1090.5,65,3659,1101
+430,"378","Paloheinäntie","Svedängsvägen","Paloheinäntie","Pakilantie 91","Baggbölevägen 91","","","",16,24.9238580658345,60.2469918098113,81,3712,1127,104,3258,1108
+431,"380","Pirkkolan liikuntapuisto","Britas idrottspark","Pirkkolan liikuntapuisto","Pirkkolan metsätie 6","Britas skogsväg 6","","","",14,24.9097508532821,60.232734803775,0,0,0,0,0,0
+432,"381","Maununneva","Magnuskärr","Maununneva","Kaarelantie 14","Kårbölevägen 14","","","",14,24.8989998259643,60.2444085812279,0,0,0,0,0,0
+433,"307","Ulappasilta","Fjärdbron","Ulappasilta","Ulappasilta 1","Fjärdbron 1","","","",18,25.1410458716813,60.2066160428581,291,1130,419,286,1025.5,383
+434,"382","Hakuninmaa","Håkansåker","Hakuninmaa","Perhekunnantie 8","Husfolksvägen 8","","","",16,24.8970699007855,60.252967146995,0,0,0,0,0,0
+435,"383","Kuninkaantammi","Kungseken","Kuninkaantammi","Kuninkaantammenkierto 22","Kungseksringen 22","","","",20,24.892757395895,60.259256054776,0,0,0,0,0,0
+436,"384","Kalannintie","Kalantivägen","Kalannintie","Kalanninpolku","Kalantistigen","","","",14,24.8841075429141,60.2528066323977,0,0,0,0,0,0
+437,"386","Kannelmäen liikuntapuisto","Gamlas idrottspark","Kannelmäen liikuntapuisto","Kanneltie 12","Kantelevägen 12","","","",16,24.8788004950615,60.2437463425961,0,0,0,0,0,0
+438,"385","Pajupillintie","Videlåtsvägen","Pajupillintie","Vanhaistentie 3","Gamlasvägen 3","","","",16,24.8861026255016,60.2432353029777,0,0,0,0,0,0
+439,"387","Kauppakeskus Kaari","Köpcentrum Kaari","Shopping Center Kaari","Kantelettarentie 1","Kanteletarvägen 1","","","",16,24.8894796721591,60.2363305501839,0,0,0,0,0,0
+440,"388","Kaustisentie","Kaustbyvägen","Kaustisentie","Pelimannintie","Spelmansvägen","","","",16,24.8814517125501,60.2378065223104,0,0,0,0,0,0
+441,"389","Kannelmäen asema","Gamlas järnvägsstation","Kannelmäki railway station","Sitratori 2","Cittertorg 2","","","",20,24.8766472489767,60.2393459909658,0,0,0,0,0,0
+442,"371","Savela","Lerstrand","Savela","Ratavallintie 6","Banvallsvägen 6","","","",14,24.9913872585832,60.2404948542171,0,0,0,0,0,0
+443,"390","Trumpettikuja","Trumpetgränden","Trumpettikuja","Trumpettitie 3","Trumpetvägen 3","","","",16,24.869109999497,60.2391561100934,0,0,0,0,0,0
+444,"392","Viljelijäntie","Odlarvägen","Viljelijäntie","Viljelijäntie 5","Odlarvägen 5","","","",16,24.8572979635334,60.2432334444678,0,0,0,0,0,0
+445,"393","Malminkartanon asema","Malmgård järnvägsstation","Malminkartano railway station","Luutnantinaukio","Löjtnantsplatsen","","","",20,24.8631156423813,60.2478178576762,0,0,0,0,0,0
+446,"394","Tuohipolku","Näverstigen","Tuohipolku","Tuohipolku 1","Näverstigen 1","","","",12,24.8574322593556,60.2515646859168,0,0,0,0,0,0
+447,"395","Honkasuo","Hongasmossa","Honkasuo","Naapuripellontie 27","Naboängsvägen 27","","","",16,24.8465809743929,60.255557476007,0,0,0,0,0,0
+448,"396","Malminkartanonhuippu","Malmgårdstoppen","Malminkartano Hill","Naapuripellontie 7","Naboängsvägen 7","","","",12,24.8486486878388,60.2504077926351,0,0,0,0,0,0
+449,"397","Hankasuontie","Hankmossvägen","Hankasuontie","Malminkartanontie 2","Malmgårdsvägen","","","",16,24.8475860266275,60.2447437736882,0,0,0,0,0,0
+450,"398","Ajomiehentie","Körkarlsvägen","Ajomiehentie","Ajomiehentie 1","Körkarlsvägen 1","","","",20,24.8512905063639,60.2388821009165,1,11192,2520,1,9762,2278
+451,"399","Vähäntuvantie","Lillstuvägen","Vähäntuvantie","Kylväjäntie 12","Såningsmansvägen 12","","","",14,24.846165047021,60.2324510345281,0,0,0,1,790,1398
+452,"400","Kuusisaari","Granö","Kuusisaari","Kuusisaarenpolku 1","Granöstigen 1","","","",16,24.8567965996401,60.1845083389847,0,0,0,0,0,0
+453,"401","Koivusaari (M)","Björkholmens metrostation","Koivusaari metro station","Sotkatie 11","Dykandsvägen 11","","","",16,24.8551642686834,60.1633863116225,2,3201,876.5,7,2958,1051
+454,"402","Bermudankuja","Bermudagränden","Välimerenkatu","Atlantinkatu 10","Atlantgatan 10","","","",16,24.9101421129463,60.1549042600429,0,0,0,4,2651,734.5
+455,"403","Verkkosaari","Nätholmen","Verkkosaari","Tukkutorinkuja 3","Partitorgsgränden","","","",20,24.9775480765957,60.1895561753156,2,2413.5,684.5,2,4040,1149.5
+456,"404","Sompasaari","Sumparn","Sompasaari","Sompasaarenlaituri 2","Sumparkajen 2","","","",14,24.9760758238593,60.1829308185667,4,1463.5,525,8,731.5,274
+457,"405","Jollas","Jollas","Jollas","Jollaksentie 33","Jollasvägen 33","","","",16,25.0616678668253,60.1644074899774,125,4086,1184,163,3608,1059
