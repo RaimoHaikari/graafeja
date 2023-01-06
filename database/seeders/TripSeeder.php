@@ -71,7 +71,7 @@ class TripSeeder extends Seeder
                     ]
                 );
 
-                if ($temp_count % 1000 == 0) {
+                if ($temp_count % 100 == 0) {
 
                     Trip::insert($values);
 
