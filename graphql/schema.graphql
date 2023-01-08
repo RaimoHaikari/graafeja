@@ -20,6 +20,7 @@ type Query {
 
     stations: [Station]! @all
     tripsByDepartureStation: [TripsByDepartureStation]!
+    tripsByReturnStation: [TripsByReturnStation]!
 
     trips(departureStationID: Int! @eq): [Trip]! @paginate
 }
@@ -69,6 +70,25 @@ type Trip {
 type TripsByDepartureStation {
   "Lainausaseman id-tunnus"
   departureStationID: Int!
+  "Lainauskerrat"
+  lkm: Int!
+  "Pisin lainareissu"
+  maxDistance: Int!
+  "Lainausreissun keskipituus"
+  avgDistance: Float!
+  "Lyhin lainareissu"
+  minDistance: Int!
+  "Pisimpään kestänyt lainareissu"
+  maxDuration: Int!
+  "Keskimääräinen lainareissun kestoaika"
+  avgDuration: Float!
+  "Lyhin lainareissun kestoaika"
+  minDuration: Int!
+}
+
+type TripsByReturnStation {
+  "Lainausaseman id-tunnus"
+  returnStationID: Int!
   "Lainauskerrat"
   lkm: Int!
   "Pisin lainareissu"
