@@ -19,6 +19,7 @@ type Query {
     ): [User!]! @all
 
     stations: [Station]! @all
+    tripsByDepartureStation: [TripsByDepartureStation]!
 
     trips(departureStationID: Int! @eq): [Trip]! @paginate
 }
@@ -32,15 +33,27 @@ type Station {
   stationID: Int!
   "Aseman suomenkielinen nimi"
   nimi: String!
-  "Pisteelle tapahtuneet palautukset"
-  palautuksia: Int!
-  "Pisteeltä suoritetut lainat"
-  lainoja: Int!
+  "Aseman ruotsinkielinen nimi"
+  namn: String!
+  "Aseman englanninkielinen nimi"
+  name: String!
+  "Osoite"
+  osoite: String!
+  "Aseman ruotsinkielinen osoite"
+  adress: String!
+  "Sijaintikunnan nimi"
+  kaupunki: String
+  "Sijaintikunnan ruotsinkielinen nimi"
+  stad: String
   "Montako pyörää asemalta löytyy"
   kapasiteetti: Int!
+  "Sijantipaikan x-koordinaatti"
+  x: Float!
+  "Sijaintipaika y-koordinaatti"
+  y: Float
+
   fooBar: Int! @field(resolver: "App\\GraphQL\\Queries\\Stations@fooBar")
 }
-
 
 type Trip {
   "Lainausaseman id-tunnus"
@@ -51,6 +64,25 @@ type Trip {
   coveredDistance: Int!
   "Matkan kesto"
   coveredDistance: Int!
+}
+
+type TripsByDepartureStation {
+  "Lainausaseman id-tunnus"
+  departureStationID: Int!
+  "Lainauskerrat"
+  lkm: Int!
+  "Pisin lainareissu"
+  maxDistance: Int!
+  "Lainausreissun keskipituus"
+  avgDistance: Float!
+  "Lyhin lainareissu"
+  minDistance: Int!
+  "Pisimpään kestänyt lainareissu"
+  maxDuration: Int!
+  "Keskimääräinen lainareissun kestoaika"
+  avgDuration: Float!
+  "Lyhin lainareissun kestoaika"
+  minDuration: Int!
 }
 
 "Account of a person who utilizes this application."
