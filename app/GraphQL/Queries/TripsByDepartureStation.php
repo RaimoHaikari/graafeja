@@ -16,7 +16,7 @@ final class TripsByDepartureStation
 
         $query = <<<END
         SELECT *
-        FROM tripsbydeparturestation
+        FROM tripsByDepartureStation
       END;
 
         $data = DB::select($query);
