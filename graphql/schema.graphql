@@ -38,6 +38,7 @@ type Station {
   lainoja: Int!
   "Montako pyörää asemalta löytyy"
   kapasiteetti: Int!
+  fooBar: Int! @field(resolver: "App\\GraphQL\\Queries\\Stations@fooBar")
 }
 
 
@@ -50,7 +51,6 @@ type Trip {
   coveredDistance: Int!
   "Matkan kesto"
   coveredDistance: Int!
-
 }
 
 "Account of a person who utilizes this application."
