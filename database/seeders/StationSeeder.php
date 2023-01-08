@@ -9,7 +9,17 @@ use App\Models\Station;
 class StationSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * ID
+     * Nimi
+     * Namn
+     * Name
+     * Osoite
+     * Adress
+     * Kaupunki
+     * Stad
+     * Kapasiteet
+     * x
+     * y
      *
      * @return void
      */
@@ -18,21 +28,26 @@ class StationSeeder extends Seeder
         // Tyhjennetään taulu
         Station::truncate();
 
-        $csvFile = fopen("https://raw.githubusercontent.com/RaimoHaikari/tahtisadetta/main/Misc/stationsProd.csv", "r");
+        // $csvFile = fopen("https://raw.githubusercontent.com/RaimoHaikari/tahtisadetta/main/Misc/stationsProd.csv", "r");
+        $csvFile = fopen(base_path("database/data/stationsProd.csv"), "r");
 
         $firstline = true;
         // id,nimi,wiki,imdb,kavi,img,ensiIlta
         while (($data = fgetcsv($csvFile, 2000, ",")) !== FALSE) {
             if (!$firstline) {
 
-                $ensiIlta =  explode(".", $data['7']);
-
                 Station::create([
-                    "stationID" => $data['1'],
-                    "nimi" => $data['2'],
-                    "palautuksia" => $data['16'],
-                    "lainoja" => $data['13'],
-                    "kapasiteetti" => $data['10']
+                    "stationID" => $data['0'],
+                    "nimi" => $data['1'],
+                    "namn" => $data['2'],
+                    "name" => $data['3'],
+                    "osoite" => $data['4'],
+                    "adress" => $data['5'],
+                    "kaupunki" => $data['6'],
+                    "stad" => $data['7'],
+                    "kapasiteetti" => $data['8'],
+                    "x" => $data['9'],
+                    "y" => $data['10']
                 ]);    
             }
             $firstline = false;
