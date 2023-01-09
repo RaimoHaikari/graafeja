@@ -2,6 +2,7 @@
 
 namespace App\GraphQL\Queries;
 use App\Models\Station;
+use Illuminate\Support\Facades\Log;
 
 /*
 $csvFile = fopen(base_path("database/data/2021-05-Prod.csv"), "r");
@@ -17,6 +18,8 @@ final class Stations
         $searchStr = $args['searchStr'];
         $orderBy = $args['orderBy'][0]['column'];
         $order = $args['orderBy'][0]['order'];
+
+        Log::info(json_encode($args));
 
 
         $stations = Station::where('nimi', 'LIKE', $searchStr.'%')->orderBy($orderBy, $order)->get();
