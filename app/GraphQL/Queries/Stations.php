@@ -1,18 +1,31 @@
 <?php
 
 namespace App\GraphQL\Queries;
-use App\Models\Trip;
-use Illuminate\Support\Facades\DB;
+use App\Models\Station;
 
 /*
 $csvFile = fopen(base_path("database/data/2021-05-Prod.csv"), "r");
 */
 final class Stations
 {
+    /**
+     * @param  null  $_
+     * @param  array{}  $args
+     */
+    public function __invoke($_, array $args)
+    {
+        $searchStr = $args['searchStr'];
+        $orderBy = $args['orderBy'][0]['column'];
+        $order = $args['orderBy'][0]['order'];
+
+
+        $stations = Station::where('nimi', 'LIKE', $searchStr.'%')->orderBy($orderBy, $order)->get();
+
+        return $stations;
+    }
+
     public function fooBar($rootValue, array $args) {
-
-
-        return 23;
+        return [];
     }
 
     public function debugger($txt) {

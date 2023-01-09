@@ -25,7 +25,14 @@ Route::get('/users', function () {
 
 });
 
+/*
+Product::where('name_en', 'LIKE', '%'.$search.'%')->get();
+
+$stations = App\Models\Station::all();
+*/
 Route::get('/stations', function() {
-    $stations = App\Models\Station::all();
-    return "<p>Asemia on yhteensä: ".count($stations)." kpl</p>";
+    $search = "a";
+    $stations = App\Models\Station::where('nimi', 'LIKE', '%'.$search.'%')->get();
+    dd($stations);
+    // return "<p>Asemia on yhteensä: ".count($stations)." kpl</p>";
 });

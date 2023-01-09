@@ -18,7 +18,11 @@ type Query {
       name: String @where(operator: "like")
     ): [User!]! @all
 
-    stations: [Station]! @all
+    stations(
+      searchStr: String, 
+      orderBy: _ @orderBy(columns: ["nimi"])
+    ): [Station]! @paginate
+
     tripsByDepartureStation: [TripsByDepartureStation]!
     tripsByReturnStation: [TripsByReturnStation]!
 
