@@ -21,7 +21,9 @@ type Query {
     stations(
       searchStr: String, 
       orderBy: _ @orderBy(columns: ["nimi"])
-    ): [Station]! @paginate
+    ): [Station]!
+    @paginate(defaultCount: 10, builder: "App\\GraphQL\\Builders\\StationBuilder@findStations")
+
 
     tripsByDepartureStation: [TripsByDepartureStation]!
     tripsByReturnStation: [TripsByReturnStation]!
