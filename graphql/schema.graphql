@@ -28,6 +28,9 @@ type Query {
     tripsByDepartureStation: [TripsByDepartureStation]!
     tripsByReturnStation: [TripsByReturnStation]!
 
+    departedTrips(departureStationID: Int!): [DepartedTrips]! 
+
+    "Lainaustiedot kokoavat tietueet"
     trips(departureStationID: Int! @eq): [Trip]! @paginate
 }
 
@@ -73,6 +76,17 @@ type Trip {
   coveredDistance: Int!
 }
 
+"MINNE ASEMALTA LAINATULLA PYÖRÄLLÄ MENTIIN"
+type DepartedTrips {
+  "Lainausaseman id-tunnus"
+  departureStationID: Int!
+  "Palautusaseman id-tunnus"
+  returnStationID: Int!
+  "Lainauskerrat"
+  lkm: Int!
+}
+
+"YHTEEVETO ASEMALTA TEHDYISTÄ LAINOISTA"
 type TripsByDepartureStation {
   "Lainausaseman id-tunnus"
   departureStationID: Int!
