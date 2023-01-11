@@ -10,11 +10,11 @@ use Illuminate\Support\Facades\Log;
 use App\Models\DepartedTrips AS DepartedTripsModel;
 
 /*
- * Resolveri, joka vastaa kysymykseen mihinkä asemalta alkaneet reissut päättyivät.
+ * Resolveri, joka vastaa kysymykseen: mistä asemalle palautetut pyörät lainattiin.
  * - osa palauttaa pyörän samaan paikkaa mistä sen lainasikin
- * - enemmistö kuitenkin on matkalla "jonnekin muualle"
+ * - enemmistö on kuitenkin tulossa jostain muualta
  */
-final class DepartedTrips
+final class ReturnedTrips
 {
     /**
      * @param  null  $_
@@ -24,12 +24,12 @@ final class DepartedTrips
     {
         $val = array();
 
-        $departureStationID = $args['departureStationID'];
+        $returnStationID = $args['returnStationID'];
 
         $query = <<<END
         SELECT departureStationID, returnStationId, count(*) as lkm
         FROM trips
-        WHERE departureStationID = $departureStationID
+        WHERE returnStationId = $returnStationID
         GROUP BY departureStationID, returnStationId
         ORDER BY lkm DESC
       END;
@@ -65,11 +65,4 @@ final class DepartedTrips
         return $val;
     }
 
-    private function getStationNames(){
-        $stations = Station::all();
-
-        $filtered = $stations->where('stationID', 1)->first()->nimi;
-        Log::info((json_encode($filtered)));
-
-    }
 }

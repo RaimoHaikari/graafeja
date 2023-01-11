@@ -5,20 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /*
-departureStationID	
-lkm	
-maxDistance	
-avgDistance
-minDistance	
-maxDuration
-avgDuration
-minDduration
-*/
+ * 
+ */
 class DepartedTrips extends Model
 {
     protected $fillable = [
         'departureStationID',
+        'departureStationNimi',
         'returnStationID',
+        'returnStationNimi',
         'lkm',
     ];
 }

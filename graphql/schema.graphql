@@ -29,6 +29,7 @@ type Query {
     tripsByReturnStation: [TripsByReturnStation]!
 
     departedTrips(departureStationID: Int!): [DepartedTrips]! 
+    returnedTrips(returnStationID: Int!): [DepartedTrips]! 
 
     "Lainaustiedot kokoavat tietueet"
     trips(departureStationID: Int! @eq): [Trip]! @paginate
@@ -80,8 +81,12 @@ type Trip {
 type DepartedTrips {
   "Lainausaseman id-tunnus"
   departureStationID: Int!
+    "Lainausaseman suomenkielinen nimi"
+  departureStationNimi: String!
   "Palautusaseman id-tunnus"
   returnStationID: Int!
+  "Palautusaseman suomenkielinen nimi"
+  returnStationNimi: String!
   "Lainauskerrat"
   lkm: Int!
 }
