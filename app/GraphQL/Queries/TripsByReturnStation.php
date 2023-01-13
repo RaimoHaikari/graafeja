@@ -3,6 +3,7 @@
 namespace App\GraphQL\Queries;
 use Illuminate\Support\Facades\DB;
 use App\Models\TripsByReturnStation  AS TripsByReturnStationModel;
+use Illuminate\Support\Facades\Log;
 
 final class TripsByReturnStation
 {
@@ -14,10 +15,24 @@ final class TripsByReturnStation
     {
         $val= array();
 
-        $query = <<<END
-        SELECT *
-        FROM tripsByReturnStation
-      END;
+        if(isset($args['returnStationID'])){
+
+            $returnStationID =  $args['returnStationID'];
+
+            $query = <<<END
+            SELECT *
+            FROM tripsByReturnStation
+            WHERE returnStationId = $returnStationID
+          END;
+
+            Log::info($query);
+        }
+        else {
+            $query = <<<END
+            SELECT *
+            FROM tripsByReturnStation
+          END;
+        }        
 
         $data = DB::select($query);
 
