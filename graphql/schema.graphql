@@ -18,14 +18,18 @@ type Query {
       name: String @where(operator: "like")
     ): [User!]! @all
 
+    "Haetaan yksittäisen aseman tiedot"
+    station(stationID: Int! @eq): Station @find
+
     stations(
       searchStr: String, 
       orderBy: _ @orderBy(columns: ["nimi"])
     ): [Station]!
     @paginate(defaultCount: 10, builder: "App\\GraphQL\\Builders\\StationBuilder@findStations")
 
-
+    "Yhteenvetoa lainauksista, joka yksittaisesta tai kaikista"
     tripsByDepartureStation(departureStationID: Int): [TripsByDepartureStation]!
+    "Yhteenvetoa palautuksista, joka yksittaisesta tai kaikista"
     tripsByReturnStation(returnStationID: Int): [TripsByReturnStation]!
 
     departedTrips(departureStationID: Int!): [DepartedTrips]! 
