@@ -43,8 +43,8 @@ final class DepartedTrips
 
         foreach ($data as $d) {
             
-            $departureStationName = $stations->where('stationID',  $d->departureStationID)->first()->nimi;
-            $returnStationName =  $stations->where('stationID',  $d->returnStationId)->first()->nimi;
+            $departureStation = $stations->where('stationID',  $d->departureStationID)->first();
+            $returnStation =  $stations->where('stationID',  $d->returnStationId)->first();
             //Log::info((json_encode($d->returnStationId)));
 
             array_push(
@@ -52,9 +52,13 @@ final class DepartedTrips
                 new DepartedTripsModel(
                     [
                         'departureStationID' => $d->departureStationID,
-                        'departureStationNimi' => $departureStationName,
+                        'departureStationNimi' => $departureStation->nimi,
+                        'depX' => $departureStation->x,
+                        'depY' => $departureStation->y,
                         'returnStationID' => $d->returnStationId,
-                        'returnStationNimi' => $returnStationName,
+                        'returnStationNimi' => $returnStation->nimi,
+                        'retX' => $returnStation->x,
+                        'retY' => $returnStation->y,
                         'lkm' =>  $d->lkm
                     ]
                 )
