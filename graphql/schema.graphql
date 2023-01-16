@@ -27,6 +27,9 @@ type Query {
     ): [Station]!
     @paginate(defaultCount: 10, builder: "App\\GraphQL\\Builders\\StationBuilder@findStations")
 
+    "Lista talletettujen asemanimien alkukirjaimista."
+    firstLettersOfStationNames: [String!]!
+
     "Yhteenvetoa lainauksista, joka yksittaisesta tai kaikista"
     tripsByDepartureStation(departureStationID: Int): [TripsByDepartureStation]!
     "Yhteenvetoa palautuksista, joka yksittaisesta tai kaikista"
