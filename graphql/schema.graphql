@@ -18,6 +18,7 @@ type Query {
       name: String @where(operator: "like")
     ): [User!]! @all
 
+
     "Haetaan yksittäisen aseman tiedot"
     station(stationID: Int! @eq): Station @find
 
@@ -26,6 +27,9 @@ type Query {
       orderBy: _ @orderBy(columns: ["nimi"])
     ): [Station]!
     @paginate(defaultCount: 10, builder: "App\\GraphQL\\Builders\\StationBuilder@findStations")
+
+    "Yhteenveto palvelusta"
+    summary: Summary!
 
     "Lista talletettujen asemanimien alkukirjaimista."
     firstLettersOfStationNames: [String!]!
@@ -54,6 +58,33 @@ type Query {
     returnsByTheDayOfWeek(returnStationID: Int!): [Int!]!
 }
 
+"TOIMINNAN PERUSTIEDOT"
+type Summary {
+  number_of_stations: Int!
+  number_of_bikes: Int!
+  stations_by_city: [StationsByCity]!
+  events_in_day: [EventsInDay]!
+  events_by_the_dayOfWeek: [EventsByDayOfTheWeek]!
+}
+
+"Laina-asemat tietyssä kaupungissa"
+type StationsByCity {
+  city: String!
+  number_of_stations: Int!
+}
+
+"Tapahtumia paivassa" 
+type EventsInDay {
+  day: Int!
+  month: Int!
+  number_of_events: Int!
+}
+
+"Tapahtumia eri viikonpäivinä"
+type EventsByDayOfTheWeek {
+  day_of_week: Int!
+  number_of_events: Int!  
+}
 
 "LAINAUSASEMAN PERUSTIEDOT"
 type Station {

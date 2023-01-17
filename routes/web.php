@@ -31,11 +31,8 @@ Product::where('name_en', 'LIKE', '%'.$search.'%')->get();
 $stations = App\Models\Station::all();
 */
 Route::get('/stations', function() {
+
     $stations = App\Models\Station::all();
-    $f1= $stations->where('stationID', 1)->first();
-    $f2= $stations->where('stationID', 2)->first()->nimi;
-    $f3= $stations->where('stationID', 3)->first()->nimi;
-    $f4= $stations->where('stationID', 4)->first()->nimi;
-    dd($f1);
-    // return "<p>Asemia on yhteensä: ".count($stations)." kpl</p>";
+    return count($stations);
+
 });
