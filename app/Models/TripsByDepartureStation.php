@@ -18,6 +18,7 @@ class TripsByDepartureStation extends Model
 {
     protected $fillable = [
         'departureStationID',
+        'departureStationName',
         'lkm',
         'maxDistance',
         'avgDistance',
