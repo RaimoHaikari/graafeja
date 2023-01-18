@@ -34,10 +34,14 @@ type Query {
     "Lista talletettujen asemanimien alkukirjaimista."
     firstLettersOfStationNames: [String!]!
 
-    "Yhteenvetoa lainauksista, joka yksittaisesta tai kaikista"
+    "Yhteenvetoa lainauksista, joko yksittaisesta tai kaikista"
     tripsByDepartureStation(departureStationID: Int): [TripsByDepartureStation]!
-    "Yhteenvetoa palautuksista, joka yksittaisesta tai kaikista"
+
+    "Yhteenvetoa palautuksista, joko yksittaisesta tai kaikista"
     tripsByReturnStation(returnStationID: Int): [TripsByReturnStation]!
+
+    "Yhteenveto lainaus- ja palautuspisteiden välillä tehdyistä matkoista"
+    popularTrips: [TripSummary]!
 
     departedTrips(departureStationID: Int!): [DepartedTrips]! 
     returnedTrips(returnStationID: Int!): [DepartedTrips]! 
@@ -116,6 +120,25 @@ type Station {
   fooBar: Int! @field(resolver: "App\\GraphQL\\Queries\\Stations@fooBar")
 }
 
+
+"Lainaus- ja palautuspisteiden välillä tehtyjen matkojen yhteenveto"
+type TripSummary {
+  "Lainausaseman id-tunnus"
+  departureStationID: Int!
+  "Lainausaseman nimi"
+  departureStationName: String!
+  "Palautusaseman id-tunnus"
+  returnStationId: Int!
+  "Palautusaseman nimi"
+  returnStationName: String!
+  "Matkan keskimääräinen pituus"
+  avgDistance: Int!
+  "Matkan keskimääräinen kesto"
+  avgDuration: Int!
+  "Tehtyjen matkojen lukumäärä"
+  lkm: Int
+}
+
 "Lainaustapahtuman perustiedot"
 type Trip {
   "Lainausaseman id-tunnus"
@@ -154,6 +177,8 @@ type DepartedTrips {
 type TripsByDepartureStation {
   "Lainausaseman id-tunnus"
   departureStationID: Int!
+  "Lainausaseman nimi"
+  departureStationName: String!
   "Lainauskerrat"
   lkm: Int!
   "Pisin lainareissu"
@@ -174,6 +199,8 @@ type TripsByDepartureStation {
 type TripsByReturnStation {
   "Lainausaseman id-tunnus"
   returnStationID: Int!
+  "Lainausaseman nimi"
+  returnStationName: String!
   "Lainauskerrat"
   lkm: Int!
   "Pisin lainareissu"
