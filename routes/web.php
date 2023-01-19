@@ -29,10 +29,12 @@ Route::get('/users', function () {
 Product::where('name_en', 'LIKE', '%'.$search.'%')->get();
 
 $stations = App\Models\Station::all();
+Post::where('id', $id)->first()
 */
 Route::get('/stations', function() {
 
-    $stations = App\Models\Station::all();
-    return count($stations);
+    $stations = App\Models\Station::where('stationID', 100)->first();
+    //return count($stations);
+    print_r($stations->nimi);
 
 });
