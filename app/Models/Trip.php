@@ -3,6 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Log;
+
+use App\Models\Station;
 
 class Trip extends Model
 {
@@ -43,4 +46,28 @@ class Trip extends Model
         'ret_Month',
         'ret_Year'
     ];
+
+    /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array
+     */
+    protected $appends = ['departureStationName'];
+
+    public function getDepartureStationNameAttribute():String
+    {
+        $departureStationID = $this->attributes['departureStationID'];
+        return Station::where('stationID', $departureStationID)->first()->nimi;
+    }
+
+    /*
+     * Palautusaseman nimi
+     */
+    public function getReturnStationName():String
+    {
+        $returnStationId = $this->attributes['returnStationId'];
+        return Station::where('stationID', $returnStationId)->first()->nimi;
+    }
+
+
 }

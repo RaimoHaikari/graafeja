@@ -28,6 +28,9 @@ type Query {
     ): [Station]!
     @paginate(defaultCount: 10, builder: "App\\GraphQL\\Builders\\StationBuilder@findStations")
 
+    journeys: [Trip]!
+    @paginate(defaultCount: 50, builder: "App\\GraphQL\\Builders\\JourneyBuilder@findJourneys")
+
     "Yhteenveto palvelusta"
     summary: Summary!
 
@@ -40,13 +43,13 @@ type Query {
     "Yhteenvetoa palautuksista, joko yksittaisesta tai kaikista"
     tripsByReturnStation(returnStationID: Int): [TripsByReturnStation]!
 
-    "Yhteenveto lainaus- ja palautuspisteiden välillä tehdyistä matkoista"
+    "Yhteenveto suosituimpien lainaus- ja palautuspisteiden välillä tehdyistä matkoista"
     popularTrips: [TripSummary]!
 
     departedTrips(departureStationID: Int!): [DepartedTrips]! 
     returnedTrips(returnStationID: Int!): [DepartedTrips]! 
 
-    "Lainaustiedot kokoavat tietueet"
+    "Määrättyyn asemaan liittyvät lainaustiedot"
     trips(departureStationID: Int! @eq): [Trip]! @paginate
 
     "Lainausmaarat eri lainaushetken tunnin mukaan"
@@ -149,6 +152,9 @@ type Trip {
   coveredDistance: Int!
   "Matkan kesto"
   duration: Int!
+  "Lainausaseman nimi"
+  departureStationName: String!
+  returnStationName: String! @method(name: "getReturnStationName")
 }
 
 "MINNE ASEMALTA LAINATULLA PYÖRÄLLÄ MENTIIN tai MISTA TULTIIN"
