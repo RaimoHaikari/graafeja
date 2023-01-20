@@ -11,7 +11,7 @@ final class FinnishStationNames
      */
     public function __invoke($_, array $args)
     {
-        $stations = Station::all()->pluck('nimi')->toArray();
+        $stations = Station::all()->sortBy('nimi')->pluck('nimi')->toArray();
         return $stations;
     }
 }
