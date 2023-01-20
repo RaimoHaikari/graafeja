@@ -2,6 +2,7 @@
 
 namespace App\GraphQL\Queries;
 use App\Models\Station;
+use Illuminate\Support\Facades\Log;
 
 final class FinnishStationNames
 {
@@ -11,7 +12,19 @@ final class FinnishStationNames
      */
     public function __invoke($_, array $args)
     {
-        $stations = Station::all()->sortBy('nimi')->pluck('nimi')->toArray();
-        return $stations;
+        $val = [];
+        $stations = Station::all()->sortBy('nimi');
+
+        foreach ($stations as $s) {
+
+            array_push(
+                $val,
+                new Station(['stationID' => $s->stationID,'nimi' => $s->nimi])
+            );
+
+
+        };
+
+        return $val;
     }
 }

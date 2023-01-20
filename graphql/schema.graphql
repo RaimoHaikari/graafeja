@@ -40,7 +40,7 @@ type Query {
     firstLettersOfStationNames: [String!]!
 
     "Lista asemien suomenkielisistä nimistä"
-    finnishStationNames: [String]!
+    finnishStationNames: [Station]!
 
     "Yhteenvetoa lainauksista, joko yksittaisesta tai kaikista"
     tripsByDepartureStation(departureStationID: Int): [TripsByDepartureStation]!
@@ -101,27 +101,27 @@ type EventsByDayOfTheWeek {
 "LAINAUSASEMAN PERUSTIEDOT"
 type Station {
   "Laravelin käyttämä Unique primary key."
-  id: ID!
+  id: ID
   "Aseman id-tunnus"
   stationID: Int!
   "Aseman suomenkielinen nimi"
   nimi: String!
   "Aseman ruotsinkielinen nimi"
-  namn: String!
+  namn: String
   "Aseman englanninkielinen nimi"
-  name: String!
+  name: String
   "Osoite"
-  osoite: String!
+  osoite: String
   "Aseman ruotsinkielinen osoite"
-  adress: String!
+  adress: String
   "Sijaintikunnan nimi"
   kaupunki: String
   "Sijaintikunnan ruotsinkielinen nimi"
   stad: String
   "Montako pyörää asemalta löytyy"
-  kapasiteetti: Int!
+  kapasiteetti: Int
   "Sijantipaikan x-koordinaatti"
-  x: Float!
+  x: Float
   "Sijaintipaika y-koordinaatti"
   y: Float
 
