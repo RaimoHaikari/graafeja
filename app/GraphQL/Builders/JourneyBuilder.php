@@ -17,9 +17,9 @@ class JourneyBuilder {
     public function findJourneys($root, array $args): Builder
     {
 
-        //Log::info(json_encode($args));
+        Log::info(json_encode($args));
         // $stations = Station::where('nimi', 'LIKE', $searchStr.'%')->orderBy($orderBy, $order)->get();
-
+        // $songs->sortByDesc('lastDate');
         return Trip::query();
     }
 }

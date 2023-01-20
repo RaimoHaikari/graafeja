@@ -28,7 +28,9 @@ type Query {
     ): [Station]!
     @paginate(defaultCount: 10, builder: "App\\GraphQL\\Builders\\StationBuilder@findStations")
 
-    journeys: [Trip]!
+    journeys(
+      orderBy: _ @orderBy(columns: ["departureStationID"])
+    ): [Trip]!
     @paginate(defaultCount: 50, builder: "App\\GraphQL\\Builders\\JourneyBuilder@findJourneys")
 
     "Yhteenveto palvelusta"
@@ -36,6 +38,9 @@ type Query {
 
     "Lista talletettujen asemanimien alkukirjaimista."
     firstLettersOfStationNames: [String!]!
+
+    "Lista asemien suomenkielisistä nimistä"
+    finnishStationNames: [String]!
 
     "Yhteenvetoa lainauksista, joko yksittaisesta tai kaikista"
     tripsByDepartureStation(departureStationID: Int): [TripsByDepartureStation]!

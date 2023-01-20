@@ -33,8 +33,7 @@ Post::where('id', $id)->first()
 */
 Route::get('/stations', function() {
 
-    $stations = App\Models\Station::where('stationID', 100)->first();
-    //return count($stations);
-    print_r($stations->nimi);
+    $stations = App\Models\Station::all()->pluck('nimi')->toArray();
+    dd($stations);
 
 });
