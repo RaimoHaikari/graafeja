@@ -10,6 +10,7 @@ use App\Models\Summary AS SummaryModel;
 use App\Models\StationsByCity;
 use App\Models\EventsInDay;
 use App\Models\EventsByDayOfTheWeek;
+use App\Models\EventsByMonth;
 
 final class Summary
 {
@@ -27,7 +28,8 @@ final class Summary
             'number_of_bikes' => $stations->sum('kapasiteetti'),
             'stations_by_city' => $this->getStationsByCity(),
             'events_in_day' => $this->getEventsInDay(),
-            'events_by_the_dayOfWeek' => $this->getEventsByTheDayOfTheWeek()
+            'events_by_the_dayOfWeek' => $this->getEventsByTheDayOfTheWeek(),
+            'events_in_month' => $this->getEventsByTheMonth()
         ]);
     }
 
@@ -48,6 +50,33 @@ final class Summary
                 new EventsByDayOfTheWeek(
                     [
                         'day_of_week' => $d->dep_Weekday,
+                        'number_of_events' =>  $d->lkm
+                    ]
+                )
+            );
+        }
+
+        return $val;
+    }
+
+    private function getEventsByTheMonth(){
+        $val = [];
+
+        $query = <<<END
+        SELECT dep_month, COUNT(*) as lkm
+        FROM trips
+        GROUP BY dep_month
+        ORDER BY dep_month
+      END;
+
+        $data = DB::select($query);
+        
+        foreach ($data as $d) {
+            array_push(
+                $val, 
+                new EventsByMonth(
+                    [
+                        'month' => $d->dep_month,
                         'number_of_events' =>  $d->lkm
                     ]
                 )

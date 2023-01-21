@@ -13,6 +13,7 @@ class Summary extends Model
         'number_of_bikes',
         'stations_by_city',
         'events_in_day',
-        'events_by_the_dayOfWeek'
+        'events_by_the_dayOfWeek',
+        'events_in_month'
     ];
 }
