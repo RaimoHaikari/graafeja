@@ -10,7 +10,9 @@ use App\Models\Summary AS SummaryModel;
 use App\Models\StationsByCity;
 use App\Models\EventsInDay;
 use App\Models\EventsByDayOfTheWeek;
-use App\Models\EventsByMonth;
+<<<<<<< HEAD
+=======
+>>>>>>> f209caccd7ac647ca4e7ba94f485ae681512ef07
 
 final class Summary
 {
@@ -120,4 +122,8 @@ final class Summary
         return $val;
 
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f209caccd7ac647ca4e7ba94f485ae681512ef07
