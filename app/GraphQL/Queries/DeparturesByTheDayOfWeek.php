@@ -4,6 +4,7 @@ namespace App\GraphQL\Queries;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+use App\Models\EventsByDayOfTheWeek;
 
 /*
  * Kuinka paljon asemalta on lainattu pyöriä, ku lainauksia
@@ -17,7 +18,7 @@ final class DeparturesByTheDayOfWeek
      */
     public function __invoke($_, array $args)
     {
-        $val = array_fill(0, 7, 0);
+        $val = [];
 
         $departureStationID = $args['departureStationID'];
     
@@ -30,12 +31,27 @@ final class DeparturesByTheDayOfWeek
 
         $data = DB::select($query);
 
-        //Log::info((json_encode($data)));
+        /* 
+        {"dep_weekday":1,"lkm":474}
+        */
 
         foreach ($data as $d) {
-            $index = ($d->dep_weekday) - 1;
-            $val[$index] = $d->lkm;
+
+            //Log::info((json_encode($d)));
+
+            array_push(
+                $val, 
+                new EventsByDayOfTheWeek(
+                    [
+                        'day_of_week' => $d->dep_weekday,
+                        'number_of_events' =>  $d->lkm
+                    ]
+                )
+            );
         }
+        
+
+        
 
 
         return $val;

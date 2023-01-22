@@ -4,6 +4,7 @@ namespace App\GraphQL\Queries;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+use App\Models\EventsByDayOfTheWeek;
 
 /*
  * Kuinka paljon asemalla on palautettu pyoria, ku palautuksia
@@ -17,7 +18,7 @@ final class ReturnsByTheDayOfWeek
      */
     public function __invoke($_, array $args)
     {
-        $val = array_fill(0, 7, 0);
+        $val = [];
 
         $returnStationID = $args['returnStationID'];
     
@@ -30,12 +31,27 @@ final class ReturnsByTheDayOfWeek
 
         $data = DB::select($query);
 
-        //Log::info((json_encode($data)));
+        foreach ($data as $d) {
 
+            //Log::info((json_encode($d)));
+
+            array_push(
+                $val, 
+                new EventsByDayOfTheWeek(
+                    [
+                        'day_of_week' => $d->ret_weekday,
+                        'number_of_events' =>  $d->lkm
+                    ]
+                )
+            );
+        }
+
+        /*
         foreach ($data as $d) {
             $index = ($d->ret_weekday) - 1;
             $val[$index] = $d->lkm;
         }
+        */
 
 
         return $val;

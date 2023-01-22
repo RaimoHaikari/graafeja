@@ -61,7 +61,7 @@ type Query {
     departuresByTheHour(departureStationID: Int!): [Int!]!
 
     "Lainausmaarat viikonpaivan mukaan"
-    departuresByTheDayOfWeek(departureStationID: Int!): [Int!]!
+    departuresByTheDayOfWeek(departureStationID: Int!): [EventsByDayOfTheWeek!]!
 
     "Määrätyn aseman kuukausittaiset lainausmäärät"
     departuresByTheMonth(departureStationID: Int!): [EventsByMonth]!
@@ -70,7 +70,7 @@ type Query {
     returnsByTheHour(returnStationID: Int!): [Int!]!
 
     "Palautusmäärän viikonpäivän mukaan"
-    returnsByTheDayOfWeek(returnStationID: Int!): [Int!]!
+    returnsByTheDayOfWeek(returnStationID: Int!): [EventsByDayOfTheWeek!]!
 
     "Asemalle tehdy kuukausittaiset palautusmäärät"
     returnsByTheMonth(returnStationID: Int!): [EventsByMonth]!
@@ -109,6 +109,12 @@ type EventsByDayOfTheWeek {
 type EventsByMonth {
   month: Int!
   number_of_events: Int!  
+}
+
+"Tapahtumat tuntitasolla" 
+type EventsByHour {
+  hour: Int!
+  number_of_events: Int! 
 }
 
 "LAINAUSASEMAN PERUSTIEDOT"
