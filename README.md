@@ -1,64 +1,99 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Helsinki city bike app
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Tämä on Helsingin kaupungin lainapyörillä tehtyjä matkoja visualisoivan sovelluksen backendin repository.
 
-## About Laravel
+- Backend on toteuttu [Laravel-sovelluskehykseen](https://laravel.com/) avulla. 
+- Tiedot on tallellettu MariaDB tietokantaan.
+- Yhteydenpito front- ja backEnd:in välillä tapahtuu GraphQL-kyselyjen välityksellä.
+- BackEnd:in GraphQl toiminallisuus on toteutettu [Lighthouse](https://lighthouse-php.com/) kirjaston avulla.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+GraphQL -kyselyistä voi testata osoitteessa [http://graafeja.tahtisadetta.fi/graphiql](http://graafeja.tahtisadetta.fi/graphiql).
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Aineisto
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Aineistona käytetään kesällä 2021 Helsingin kaupungin lainapyörillä ajetuista matkoista kerättyä tietoa. 
 
-## Learning Laravel
+Sovelluksessa on käytössä tietoa kolmen kuukauden ajalta, kattaen touko- ja heinäkuun aikana suoritetut matkat.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Tiedot ovat peräisi Solita Oy:n Dev Academyn esivalintatehtävästä ja löytyvät osoitteesta: [https://github.com/solita/dev-academy-2023-exercise](https://github.com/solita/dev-academy-2023-exercise).
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Aineiston alkuperäinen tuottaja on [HSL](https://www.hsl.fi/en/hsl/open-data).
 
-## Laravel Sponsors
+### Tietokanta
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+#### stations
 
-### Premium Partners
+Laina-asemien perustiedot
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+| Sarake | Tyyppi | Sisältö |
+| :---         |     :---      | :--- |
+| stationID   | integer    | Aseman id-tunnus |
+| nimi     | string       | Suomenkielinen nimi  |
+| namn     | string       | Ruotsinkielinen nimi  |
+| name     | string       | Englanninkielinen nimi  |
+| osoite     | string       | Katuosoite |
+| adress     | string       | Ruotsinkielinen katuosoite  |
+| kaupunki     | string       | Sijaintikaupunki  |
+| stad     | string       | Sijaintikaupungin ruotsinkielinen nimi |
+| kaupunki     | integer       | Lainattavien pyörien lkm  |
+| x     | float(10, 8)       | Aseman x koordinaatti  |
+| y     | float(10, 8)       |  Aseman y koordinaatti  |
 
-## Contributing
+#### trips
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Pyörillä tehdyt reissut.
 
-## Code of Conduct
+| Sarake | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| departureStationID | integer | Lainausaseman id-tunnus |
+| returnStationId | integer | Palautussaseman id-tunnus |
+| coveredDistance | integer | Kuljettu matka metreinä |
+| duration | integer | Laina-aika sekunteina |
+| dep_H | integer | Lainausajankohdan tunti |
+| dep_M | integer | Lainausajankohdan minuutit |
+| dep_Day | integer | Lainausajankohdan päivä |
+| dep_Weekday | integer | Lainausajankohdan viikonpäivä |
+| dep_Month | integer | Lainausajankohdan kuukausi |
+| dep_Year | integer | Lainausajankohdan vuosi |
+| ret_H | integer | Palautusajankohdan tunti |
+| ret_M | integer | Palautusajankohdan minuutit |
+| ret_Day | integer | Palautusajankohdan päivä |
+| ret_Weekday | integer | Palautusajankohdan viikonpäivä |
+| ret_Month | integer | Palautusajankohdan kuukausi |
+| ret_Year | integer | Palautusajankohdan vuosi |
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Lisäksi on käytössä kaksi näkymää.
 
-## Security Vulnerabilities
+#### tripsByDepartureStation
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Yhteenveto lainoista asemittain.
 
-## License
+| Sarake | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| departureStationID | integer | Lainausaseman id-tunnus |
+| lkm | integer | Lainojen kokonaismäärä |
+| maxDistance | integer | Pisin lainareissu metreinä |
+| avgDistance | float | Keskimääräinen lainareissu metreinä |
+| minDistance | integer | Lyhin lainareissu metreinä |
+| maxDuration | integer | Pisin laina-aika sekunteina |
+| avgDuration | float | Keskimääräinen laina-aika sekunteina |
+| minDuration | integer | Lyhin laina-aika sekunteina |
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+#### tripsByReturnStation
+
+Yhteenveto palautuksista asemittain
+
+| Sarake | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| returnStationId | integer | Palautusaseman id-tunnus |
+| lkm | integer | Palautusten kokonaismäärä |
+| maxDistance | integer | Pisin lainareissu metreinä |
+| avgDistance | float | Keskimääräinen lainareissu metreinä |
+| minDistance | integer | Lyhin lainareissu metreinä |
+| maxDuration | integer | Pisin laina-aika sekunteina |
+| avgDuration | float | Keskimääräinen laina-aika sekunteina |
+| minDuration | integer | Lyhin laina-aika sekunteina |
+
+### GraphQL
+
+
