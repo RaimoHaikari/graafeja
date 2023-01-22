@@ -77,6 +77,7 @@ type Summary {
   stations_by_city: [StationsByCity]!
   events_in_day: [EventsInDay]!
   events_by_the_dayOfWeek: [EventsByDayOfTheWeek]!
+  events_by_month: [EventsByMonth]!
 }
 
 "Laina-asemat tietyssä kaupungissa"
@@ -95,6 +96,12 @@ type EventsInDay {
 "Tapahtumia eri viikonpäivinä"
 type EventsByDayOfTheWeek {
   day_of_week: Int!
+  number_of_events: Int!  
+}
+
+"Tapahtumat kuukausitasolla"
+type EventsByMonth {
+  month: Int!
   number_of_events: Int!  
 }
 
