@@ -19,7 +19,7 @@ type Query {
     ): [User!]! @all
 
 
-    "Haetaan yksittäisen aseman tiedot"
+    "+ Haetaan yksittäisen aseman tiedot"
     station(stationID: Int! @eq): Station @find
 
     stations(
@@ -117,7 +117,7 @@ type EventsByHour {
   number_of_events: Int! 
 }
 
-"LAINAUSASEMAN PERUSTIEDOT"
+" + lainausaseman perustiedot"
 type Station {
   "Laravelin käyttämä Unique primary key."
   id: ID
