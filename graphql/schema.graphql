@@ -35,22 +35,22 @@ type Query {
     ): [Trip]!
     @paginate(defaultCount: 50, builder: "App\\GraphQL\\Builders\\JourneyBuilder@findJourneys")
 
-    "Yhteenveto palvelusta"
+    "+ Yhteenveto palvelusta"
     summary: Summary!
 
-    "Lista talletettujen asemanimien alkukirjaimista."
+    "+ Lista talletettujen asemanimien alkukirjaimista."
     firstLettersOfStationNames: [String!]!
 
-    "Lista asemien suomenkielisistä nimistä"
+    "+ Lista asemien suomenkielisistä nimistä"
     finnishStationNames: [Station]!
 
-    "Yhteenvetoa lainauksista, joko yksittaisesta tai kaikista"
+    "+ Yhteenvetoa lainauksista, joko yksittaisen aseman tai kaikkien"
     tripsByDepartureStation(departureStationID: Int): [TripsByDepartureStation]!
 
-    "Yhteenvetoa palautuksista, joko yksittaisesta tai kaikista"
+    "+ Yhteenvetoa palautuksista, joko yksittäisen aseman tai kaikkien"
     tripsByReturnStation(returnStationID: Int): [TripsByReturnStation]!
 
-    "Yhteenveto suosituimpien lainaus- ja palautuspisteiden välillä tehdyistä matkoista"
+    "+ Yhteenveto suosituimpien lainaus- ja palautuspisteiden välillä tehdyistä matkoista"
     popularTrips: [TripSummary]!
 
     departedTrips(departureStationID: Int!): [DepartedTrips]! 
@@ -78,9 +78,11 @@ type Query {
     returnsByTheMonth(returnStationID: Int!): [EventsByMonth]!
 }
 
-"TOIMINNAN PERUSTIEDOT"
+"+ TOIMINNAN PERUSTIEDOT"
 type Summary {
+  "Lainausasemien kokonaismäärä"
   number_of_stations: Int!
+  "Lainattavien pyörien kokonaismäärä"
   number_of_bikes: Int!
   stations_by_city: [StationsByCity]!
   events_in_day: [EventsInDay]!
@@ -88,28 +90,37 @@ type Summary {
   events_by_month: [EventsByMonth]!
 }
 
-"Laina-asemat tietyssä kaupungissa"
+"+ Laina-asemat tietyssä kaupungissa"
 type StationsByCity {
+  "Kaupungin nimi"
   city: String!
+  "Asemien lukumäärä"
   number_of_stations: Int!
 }
 
-"Tapahtumia paivassa" 
+"+ Tapahtumia paivassa" 
 type EventsInDay {
+  "Päivä"
   day: Int!
+  "Kuukausi"
   month: Int!
+  "Lainaustapahtumien määrä"
   number_of_events: Int!
 }
 
-"Tapahtumia eri viikonpäivinä"
+"+ Tapahtumia eri viikonpäivinä"
 type EventsByDayOfTheWeek {
+  "Viikonpäivän järjestysnumero"
   day_of_week: Int!
+  "Lainaustapahtumien määrä"
   number_of_events: Int!  
 }
 
-"Tapahtumat kuukausitasolla"
+"+ Tapahtumat kuukausitasolla"
 type EventsByMonth {
+  "Kuukauden järjestysnumero"
   month: Int!
+  "Lainaustapahtumien määrä"
   number_of_events: Int!  
 }
 
@@ -150,7 +161,7 @@ type Station {
 }
 
 
-"Lainaus- ja palautuspisteiden välillä tehtyjen matkojen yhteenveto"
+"+ Lainaus- ja palautuspisteiden välillä tehtyjen matkojen yhteenveto"
 type TripSummary {
   "Lainausaseman id-tunnus"
   departureStationID: Int!
@@ -205,7 +216,7 @@ type DepartedTrips {
   lkm: Int!
 }
 
-"YHTEEVETO ASEMALTA TEHDYISTÄ LAINOISTA"
+" + YHTEEVETO ASEMALTA TEHDYISTÄ LAINOISTA"
 type TripsByDepartureStation {
   "Lainausaseman id-tunnus"
   departureStationID: Int!
@@ -227,25 +238,25 @@ type TripsByDepartureStation {
   minDuration: Int!
 }
 
-"YHTEENVETO ASEMALLE PALAUTETUISTA LAINOISTA"
+"+ YHTEENVETO ASEMALLE PALAUTETUISTA LAINOISTA"
 type TripsByReturnStation {
-  "Lainausaseman id-tunnus"
+  "Palautussaseman id-tunnus"
   returnStationID: Int!
-  "Lainausaseman nimi"
+  "Palautusaseman nimi"
   returnStationName: String!
   "Lainauskerrat"
   lkm: Int!
-  "Pisin lainareissu"
+  "Pisin palautusreissu"
   maxDistance: Int!
-  "Lainausreissun keskipituus"
+  "Palautusreissun keskipituus"
   avgDistance: Float!
-  "Lyhin lainareissu"
+  "Lyhin palaustusreissu"
   minDistance: Int!
-  "Pisimpään kestänyt lainareissu"
+  "Pisimpään kestänyt palautusreissu"
   maxDuration: Int!
-  "Keskimääräinen lainareissun kestoaika"
+  "Keskimääräinen palautusreissun kestoaika"
   avgDuration: Float!
-  "Lyhin lainareissun kestoaika"
+  "Lyhin palautusreissun kestoaika"
   minDuration: Int!
 }
 

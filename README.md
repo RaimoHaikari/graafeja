@@ -216,6 +216,36 @@ Käydään läpi tuetut kyselyt ja käytetyt tietotyypit.
 
 #### Kyselyt
 
+##### finnishStationNames
+
+Listaus suomenkielisistä asemanimistä.
+
+***Palauttaa***
+
+Aseman perustiedot sisältävän [Station](#station-1)-objektin.
+
+**Esimerkki**
+
+```
+{
+  finnishStationNames{
+    nimi
+    stationID
+  }
+}
+```
+
+##### firstLettersOfStationNames
+
+Palautaa lista millä aakkosista, joille on olemassa vastaavalla kirjaimella alkava suomenkielinen lainausaseman nimi.
+
+**Esimerkki**
+
+```
+{
+  firstLettersOfStationNames
+}
+```
 
 ##### journeys
 
@@ -223,9 +253,13 @@ Palauttaa lainatapahtumista talletetut perustiedot
 
 __Parametrit__
 
-| orderBy | [orderBy -lauseke](https://lighthouse-php.com/5/digging-deeper/ordering.html#client-controlled-ordering) | Tulosten lajitteluperuste |
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| orderBy | orderBy-objekti | Tulosten lajitteluperuste |
 | page | int! | Tulostettava sivu |
 | first | int! | Montako tulosta kerralla halutaan |
+
+orderBy-objektista löydät lisätietoa [Lighthousen dokumentaatiosta](https://lighthouse-php.com/5/digging-deeper/ordering.html#client-controlled-ordering) 
 
 ***Palauttaa***
 
@@ -249,6 +283,29 @@ Paginator-objektin avulla saadaan selville mm. kyselyn tuottamien tulosten kokon
   }
 }
 ```
+
+
+##### popularTrips
+
+Yhteenveto kymmenen suosituimman lainaus- ja palautuspisteiden välillä tehdyistä matkoista
+
+***Palauttaa***
+
+[TripSummary](#tripsummary)-objekteja sisältävän taulukon.
+
+**Esimerkki**
+
+```
+{
+  popularTrips {
+    departureStationName
+    returnStationName
+    lkm
+  }
+}
+```
+
+
 
 ##### station
 
@@ -341,6 +398,73 @@ Aseman toiminnan yhteenvedon sisältävän [Summary](#summary-1)-objektin.
 }
 ```
 
+##### tripsByDepartureStation
+
+Palauttaa yhteenvedon asemilta tehdyistä lainauksista. Tuloksen voidaan tarvittaessa rajata yksittäiseen asemaan.
+
+__Parametrit__
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| departureStationID | Int | Aseman id-tunnus |
+
+Kysely edellyttää, että parametrin __departureStationID__ käyttöä.
+
+Mikäli parametrille annetaan arvoksi __null__ kysely palauttaa tiedot kaikkien asemien lainauksista. Mikäli parametrille annetaan jonkin aseman nimi, kysely palauttaa ainoastaan kyseisen aseman lainaustiedot.
+
+
+***Palauttaa***
+
+[TripsByDepartureStation](#tripsbydeparturestation-2) -luokan objekteja sisältävän taulukon.
+
+**Esimerkki**
+
+```
+{
+  tripsByDepartureStation(departureStationID:null) {
+    departureStationID
+    lkm
+    avgDistance
+  }
+}
+```
+
+
+##### tripsByReturnStation
+
+Palauttaa yhteenvedon asemille suoritetuista palautuksista. Tuloksen voidaan tarvittaessa rajata yksittäiseen asemaan.
+
+__Parametrit__
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| returnStationID | Int | Aseman id-tunnus |
+
+Kysely edellyttää, että parametrin __returnStationID__ käyttöä.
+
+Mikäli parametrille annetaan arvoksi __null__ kysely palauttaa yhteenvetotiedot kaikkien asemien palautuksista. Mikäli parametrille annetaan jonkin aseman nimi, tuloksena on ainoastaan kyseiselle asemalla tehdyt palautukset.
+
+
+***Palauttaa***
+
+[TripsByReturnStation](#tripsbyreturnstation-2) -luokan objekteja sisältävän taulukon.
+
+**Esimerkki**
+
+```
+{
+  tripsByReturnStation(returnStationID:6){
+    returnStationID
+    lkm
+    avgDistance
+  }
+}
+```
+
+
+
+
+
 
 #### Tietotyypit
 
@@ -426,5 +550,51 @@ Lainaustapahtuman perustiedot.
 | departureStationName | String! | Lainausaseman nimi |
 | returnStationName | String! | Palautusaseman nimi |
 
+##### TripsByDepartureStation
+
+Lainaustapahtuman perustiedot.
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| departureStationID | Int! | Lainausaseman id-tunnus |
+| departureStationName | String! | Lainausaseman nimi |
+| lkm | Int! | Lainauskerrat |
+| maxDistance | Int! | Pisin lainareissu |
+| avgDistance | Float! | Lainausreissun keskipituusu |
+| minDistance | Int! | Lyhin lainareissu |
+| maxDuration | Int! | Pisimpään kestänyt lainareissu |
+| avgDuration | Float! | Keskimääräinen lainareissun kestoaika |
+| minDuration | Int! | Lyhin lainareissun kestoaika |
+
+
+##### TripsByReturnStation
+
+Palautustapahtuman perustiedot.
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| returnStationID | Int! | Palautusaseman id-tunnus |
+| returnStationName | String! | Palautusaseman nimi |
+| lkm | Int! | Palautuskerrat |
+| maxDistance | Int! | Pisin palautusreissu |
+| avgDistance | Float! | Palautusreissun keskipituusu |
+| minDistance | Int! | Lyhin palautusreissu |
+| maxDuration | Int! | Pisimpään kestänyt palautusreissu |
+| avgDuration | Float! | Keskimääräinen palautusreissun kestoaika |
+| minDuration | Int! | Lyhin palautusreissun kestoaika |
+
+##### TripSummary
+
+Lainaus- ja palautuspisteiden välillä tehtyjen matkojen yhteenveto.
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| departureStationID | Int! | Lainausaseman id-tunnus |
+| departureStationName | String! | Lainausaseman nimi |
+| returnStationId | Int! | Palautusaseman id-tunnus |
+| returnStationName | String! | Palautusaseman nimi |
+| avgDistance | Int! | Matkan keskimääräinen pituus |
+| avgDuration | Int! | Matkan keskimääräinen kesto |
+| lkm | Int! | Tehtyjen matkojen lukumäärä |
 
 
