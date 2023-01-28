@@ -216,6 +216,110 @@ Käydään läpi tuetut kyselyt ja käytetyt tietotyypit.
 
 #### Kyselyt
 
+##### departedTrips 
+
+Minne asemalta lainatut pyörät palautettiin.
+
+__Parametrit__
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| departureStationID | Int!| Lainausaseman id-tunnus |
+
+
+***Palauttaa***
+
+Listauksen kaikista palautuspisteistä, joihin asemalta lainatut pyörät palautettiin. Jokakaisen palautuspisteen yhteydessä mainitaan mm. nimi ja palautusten määrä. Palautettavat tiedot on koottu [DepartedTrips](#departedtrips-1)-objekteihin. 
+
+**Esimerkki**
+
+```
+{
+  departedTrips(departureStationID:202) {
+    departureStationNimi
+    returnStationNimi
+    lkm
+  }
+}
+```
+
+##### departuresByTheDayOfWeek
+
+Asemalta tehtyjen lainausten jakautuminen eri viikonpäiville.
+
+__Parametrit__
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| departureStationID | Int!| Lainausaseman id-tunnus |
+
+***Palauttaa***
+
+[EventsByDayOfTheWeek](#eventsbydayoftheweek)-objekteja sisältävä taulukon. Jokaiselle viikonpäivälle on omistettu oma objekti, johon on tallennettu kyseisenä viikonpäivänä suoritettujen lainausten määrä. 
+
+**Esimerkki**
+
+```
+{
+  departuresByTheDayOfWeek(departureStationID: 45){
+    day_of_week
+    number_of_events
+  }
+}
+```
+
+
+##### departuresByTheHour
+
+Asemalta tehtyjen lainausten jakautuminen eri kellon ajoille.
+
+__Parametrit__
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| departureStationID | Int!| Lainausaseman id-tunnus |
+
+***Palauttaa***
+
+Kokonaislukuja sisältävän taulukon. Taulukossa on 24 solua, yksi jokaista vuorokauden tuntia varten. Taulukon indeksi 0 vastaa kellonaikana 0:00 - 0:59 tehtyjä lainauksia.
+
+**Esimerkki**
+
+```
+{
+  departuresByTheHour(departureStationID: 23)
+}
+```
+
+##### departuresByTheMonth
+
+
+Asemalta tehtyjen lainausten jakautuminen eri kuukausille.
+
+__Parametrit__
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| departureStationID | Int!| Lainausaseman id-tunnus |
+
+***Palauttaa***
+
+[EventsByMonth](#eventsbymonth)-objekteja sisältävä taulukon. Jokaiselle aineiston sisältämälle kuukaudelle on omistettu oma objekti, johon on tallennettu kyseisenä kuukautena suoritettujen lainausten määrä. 
+
+Tehtävän aineisto kattaa vuoden 2021 touko- ja heinäkuun välillä tehdyt lainat.
+
+**Esimerkki**
+
+```
+{
+  departuresByTheMonth(departureStationID:341){
+    month
+    number_of_events
+  }
+}
+```
+
+
 ##### finnishStationNames
 
 Listaus suomenkielisistä asemanimistä.
@@ -287,7 +391,7 @@ Paginator-objektin avulla saadaan selville mm. kyselyn tuottamien tulosten kokon
 
 ##### popularTrips
 
-Yhteenveto kymmenen suosituimman lainaus- ja palautuspisteiden välillä tehdyistä matkoista
+Yhteenveto kymmenen suosituimman lainaus- ja palautuspisteiden välillä tehdyistä matkoista.
 
 ***Palauttaa***
 
@@ -306,6 +410,119 @@ Yhteenveto kymmenen suosituimman lainaus- ja palautuspisteiden välillä tehdyis
 ```
 
 
+##### returnedTrips 
+
+Mistä asemalle palautetut pyörät oli lainattu.
+
+__Parametrit__
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| returnStationID | Int!| Palautusaseman id-tunnus |
+
+
+***Palauttaa***
+
+Listauksen kaikista lainauspisteistä, joista asemalle palautetu pyörät oli lainattu. Jokakaisen lainauspisteen yhteydessä mainitaan mm. nimi ja palautusten määrä. Palautettavat tiedot on koottu [DepartedTrips](#departedtrips-1)-objekteihin. 
+
+**Esimerkki**
+
+```
+{
+  returnedTrips(returnStationID: 220){
+    departureStationNimi
+    returnStationNimi
+    lkm
+  }
+}
+```
+
+
+##### returnsByTheDayOfWeek
+
+Asemalta tehtyjen lainausten jakautuminen eri viikonpäiville.
+
+__Parametrit__
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| returnStationID | Int!| Palautus id-tunnus |
+
+***Palauttaa***
+
+[EventsByDayOfTheWeek](#eventsbydayoftheweek)-objekteja sisältävä taulukon. Jokaiselle viikonpäivälle on omistettu oma objekti, johon on tallennettu kyseisenä viikonpäivänä tapahtuneiden palautusten määrä. 
+
+**Esimerkki**
+
+```
+{
+  returnsByTheDayOfWeek(returnStationID: 321){
+    day_of_week
+    number_of_events
+  }
+}
+```
+
+
+##### returnsByTheHour
+
+Asemalle suoritettujen palautusten jakautuminen eri kuukausille.
+
+__Parametrit__
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| returnStationID | Int!| Palautusaseman id-tunnus |
+
+***Palauttaa***
+
+[EventsByMonth](#eventsbymonth)-objekteja sisältävä taulukon. Jokaiselle aineiston sisältämälle kuukaudelle on omistettu oma objekti, johon on tallennettu kyseisenä kuukautena suoritettujen palautusten määrä. 
+
+Tehtävän aineisto kattaa vuoden 2021 touko- ja heinäkuun välillä tehdyt lainat.
+
+**Esimerkki**
+
+```
+{ 
+	returnsByTheMonth(returnStationID: 66){
+    month
+    number_of_events
+  }
+}
+```
+
+
+##### returnsByTheMonth
+
+Asemalle tapahtuneiden palautusten jakautuminen eri kuukausille.
+
+__Parametrit__
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| returnStationID | Int!| Palautusaseman id-tunnus |
+
+***Palauttaa***
+
+[EventsByMonth](#eventsbymonth)-objekteja sisältävä taulukon. Jokaiselle aineiston sisältämälle kuukaudelle on omistettu oma objekti, johon on tallennettu kyseisenä kuukautena suoritettujen lainausten määrä. 
+
+Tehtävän aineisto kattaa vuoden 2021 touko- ja heinäkuun välillä tehdyt lainat.
+
+**Esimerkki**
+
+```
+{
+  returnsByTheMonth(returnStationID:212){
+    month
+    number_of_events
+  }
+}
+```
+
+
+##### trips
+
+Päällekkäinen kyselyn [journeys](#journeys) kanssa.
 
 ##### station
 
@@ -467,6 +684,23 @@ Mikäli parametrille annetaan arvoksi __null__ kysely palauttaa yhteenvetotiedot
 
 
 #### Tietotyypit
+
+##### DepartedTrips
+
+Minne asemalta lainatulla pyörällä mentiin tai mistä sinne palautettu pyörä oli lainattu.
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| day_of_week | Int! | Viikonpäivän järjestysnumero |
+| departureStationID | Int! | Lainausaseman id-tunnus |
+| departureStationNimi | String! | Lainausaseman suomenkielinen nimi |
+| depX | Float! | Lainausaseman sijantipaikan x-koordinaatti |
+| depY | Float! | Lainausaseman sijantipaikan y-koordinaatti |
+| returnStationID | Int! | Palautusaseman id-tunnus |
+| returnStationNimi | String! | Palautusaseman suomenkielinen nimi |
+| retX | Float! | Palautusaseman sijantipaikan x-koordinaatti |
+| retY | Float! | Palautusaseman sijantipaikan y-koordinaatti |
+| lkm | Int! | Lainauskerrat |
 
 ##### EventsByDayOfTheWeek
 

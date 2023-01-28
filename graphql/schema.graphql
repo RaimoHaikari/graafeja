@@ -53,28 +53,31 @@ type Query {
     "+ Yhteenveto suosituimpien lainaus- ja palautuspisteiden välillä tehdyistä matkoista"
     popularTrips: [TripSummary]!
 
+    "+ listaus siitä, minne asemalta lainatut pyörät palautettiin"
     departedTrips(departureStationID: Int!): [DepartedTrips]! 
+
+    "+ listaus siitä, mitä asemalle lainatut pyörät oli lainattu"
     returnedTrips(returnStationID: Int!): [DepartedTrips]! 
 
-    "Määrättyyn asemaan liittyvät lainaustiedot"
+    "+ Määrättyyn asemaan liittyvät lainaustiedot"
     trips(departureStationID: Int! @eq): [Trip]! @paginate
 
-    "Lainausmaarat eri lainaushetken tunnin mukaan"
+    "+ Lainausmaarat eri lainaushetken tunnin mukaan"
     departuresByTheHour(departureStationID: Int!): [Int!]!
 
-    "Lainausmaarat viikonpaivan mukaan"
+    "+ Lainausmaarat viikonpaivan mukaan"
     departuresByTheDayOfWeek(departureStationID: Int!): [EventsByDayOfTheWeek!]!
 
-    "Määrätyn aseman kuukausittaiset lainausmäärät"
+    "+ Määrätyn aseman kuukausittaiset lainausmäärät"
     departuresByTheMonth(departureStationID: Int!): [EventsByMonth]!
 
-    "Palautusmäärät palautushetken tunnin mukaan"
+    "+ Palautusmäärät palautushetken tunnin mukaan"
     returnsByTheHour(returnStationID: Int!): [Int!]!
 
-    "Palautusmäärän viikonpäivän mukaan"
+    " + Palautusmäärän viikonpäivän mukaan"
     returnsByTheDayOfWeek(returnStationID: Int!): [EventsByDayOfTheWeek!]!
 
-    "Asemalle tehdy kuukausittaiset palautusmäärät"
+    " + Asemalle tehdy kuukausittaiset palautusmäärät"
     returnsByTheMonth(returnStationID: Int!): [EventsByMonth]!
 }
 
@@ -194,7 +197,7 @@ type Trip {
   returnStationName: String! @method(name: "getReturnStationName")
 }
 
-"MINNE ASEMALTA LAINATULLA PYÖRÄLLÄ MENTIIN tai MISTA TULTIIN"
+" + MINNE ASEMALTA LAINATULLA PYÖRÄLLÄ MENTIIN tai MISTA TULTIIN"
 type DepartedTrips {
   "Lainausaseman id-tunnus"
   departureStationID: Int!
