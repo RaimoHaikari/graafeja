@@ -22,12 +22,14 @@ type Query {
     "+ Haetaan yksittäisen aseman tiedot"
     station(stationID: Int! @eq): Station @find
 
+    "+ Haetaan parametrin: searchStr arvolla alkavat asemat"
     stations(
       searchStr: String, 
       orderBy: _ @orderBy(columns: ["nimi"])
     ): [Station]!
     @paginate(defaultCount: 10, builder: "App\\GraphQL\\Builders\\StationBuilder@findStations")
 
+    "+ Haetaan lainatapahtumat "
     journeys(
       orderBy: _ @orderBy(columns: ["departureStationID"])
     ): [Trip]!
@@ -166,7 +168,7 @@ type TripSummary {
   lkm: Int
 }
 
-"Lainaustapahtuman perustiedot"
+"+ Lainaustapahtuman perustiedot"
 type Trip {
   "Lainausaseman id-tunnus"
   departureStationID: Int!

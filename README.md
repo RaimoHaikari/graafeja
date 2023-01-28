@@ -216,6 +216,40 @@ Käydään läpi tuetut kyselyt ja käytetyt tietotyypit.
 
 #### Kyselyt
 
+
+##### journeys
+
+Palauttaa lainatapahtumista talletetut perustiedot
+
+__Parametrit__
+
+| orderBy | [orderBy -lauseke](https://lighthouse-php.com/5/digging-deeper/ordering.html#client-controlled-ordering) | Tulosten lajitteluperuste |
+| page | int! | Tulostettava sivu |
+| first | int! | Montako tulosta kerralla halutaan |
+
+***Palauttaa***
+
+Aseman perustiedot sisältävän [Trip](#trip)-objektin sekä Paginator-objektin.
+
+Paginator-objektin avulla saadaan selville mm. kyselyn tuottamien tulosten kokonaismäärä, kerralla näytettävien tulosten määrä, löytyykö aktiivisen sivun jälkeen lisää sivuja jne. Lisätietoa Paginator-objektista löydät esim. [täältä](https://graphql.org/learn/pagination/).
+
+**Esimerkki**
+
+```
+{
+  journeys(first:10, page:2){
+    data {
+      departureStationName
+      returnStationName
+      coveredDistance
+    }
+    paginatorInfo {
+      hasMorePages
+    }
+  }
+}
+```
+
 ##### station
 
 Lainausaseman perustietojen haku.
@@ -228,7 +262,7 @@ __Parametrit__
 
 ***Palauttaa***
 
-Aseman perustiedot sisältävän [Station](#stationObj)-objektin.
+Aseman perustiedot sisältävän [Station](#station-1)-objektin.
 
 **Esimerkki**
 
@@ -242,10 +276,102 @@ Aseman perustiedot sisältävän [Station](#stationObj)-objektin.
 }
 ```
 
+##### stations
+
+Parametrillä __searchStr__ annetulla merkkijonolla alkavat asemat. Parametri __searchStr__ on pakollinen, mutta se voidaan jättää tyhjäksi, tällöin kysely hakee kaikki asemat.
+
+__Parametrit__
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| searchStr | String! | Hakutermi |
+| orderBy | [orderBy -lauseke](https://lighthouse-php.com/5/digging-deeper/ordering.html#client-controlled-ordering) | Tulosten lajitteluperuste |
+| page | int! | Tulostettava sivu |
+| first | int! | Montako tulosta kerralla halutaan |
+
+Huom.
+
+Lajitteluperusteena voidaan käyttää ainoastaan aseman suomenkielistä nimeä.
+
+Yhdellä kertaa palautettavien tietojen määrä asetetaan parametrien __page__ ja __first__ avulla. 
+
+- __first__ kuinka monta tulosta kerralla palautetaan
+- __page__ monesko sivu tuloksista halutaa, kun huomioidaan palautettava sivumäärä.
+
+***Palauttaa***
+
+Aseman perustiedot sisältävän [Station](#station-1)-objektin sekä Paginator-objektin.
+
+Paginator-objektin avulla saadaan selville mm. kyselyn tuottamien tulosten kokonaismäärä, kerralla näytettävien tulosten määrä, löytyykö aktiivisen sivun jälkeen lisää sivuja jne. Lisätietoa Paginator-objektista löydät esim. [täältä](https://graphql.org/learn/pagination/).
+
+**Esimerkki**
+
+```
+{
+  stations(searchStr: "A", orderBy:[{column:NIMI, order: DESC}], page: 1, first: 10) {
+    data {
+      stationID
+      nimi
+    }
+    paginatorInfo {
+      count
+      currentPage
+    }
+  }
+}
+```
+
+
+##### summary
+
+Palauttaa yhteenvedon lainaustoiminnasta.
+
+***Palauttaa***
+
+Aseman toiminnan yhteenvedon sisältävän [Summary](#summary-1)-objektin.
+
+**Esimerkki**
+
+```
+{
+  summary {
+    number_of_stations
+    number_of_bikes
+  }
+}
+```
+
 
 #### Tietotyypit
 
-#####  <a name="stationObj"></a>Station
+##### EventsByDayOfTheWeek
+
+Montako lainaustapahtumaa tiettynä viikonpäivänä suoritettiin
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| day_of_week | Int! | Viikonpäivän järjestysnumero |
+| number_of_events | Int! | Lainaustapahtumien määrä |
+
+##### EventsByMonth
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| month | Int! | Kuukauden järjestysnumero |
+| number_of_events | Int! | Lainaustapahtumien määrä |
+
+
+##### EventsInDay
+
+Montako lainaustapahtumaa tiettynä päivänä suoritettiin.
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| day | Int! | Päivä |
+| month | Int! | Kuukausi |
+| number_of_events | Int! | Lainaustapahtumien määrä |
+
+##### Station
 
 Lainausaseman perustiedot.
 
@@ -262,6 +388,43 @@ Lainausaseman perustiedot.
 | kapasiteetti | Int | Montako pyörää asemalta löytyy |
 | x | Float | Sijantipaikan x-koordinaatti |
 | y | Float | Sijaintipaika y-koordinaatti |
+
+##### StationsByCity
+
+Montako lainausasemaa kaupungin alueella sijaitsee.
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| city | String! | Kaupungin nimi |
+| number_of_stations | Int! | Lainausasemien määrä |
+
+
+##### Summary
+
+Lainaustoiminnan perustiedot.
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| number_of_stations | Int! | Lainausasemien kokonaismäärä |
+| number_of_bikes | Int! | Lainattavien pyörien kokonaismäärä |
+| stations_by_city | [StationsByCity](#stationsbycity) | Montako lainausasemaa kaupungin alueella sijaitsee |
+| events_in_day | [EventsInDay](#eventsinday) | Montako lainausasemaa eri päivinä tehtiin |
+| events_by_the_dayOfWeek | [EventsByDayOfTheWeek](#eventsbydayoftheweek) | Montako lainausasemaa eri viikonpäivinä tehtiin |
+| events_by_month | [EventsByMonth](#eventsbymonth) | Montako lainausasemaa eri kuukausina|
+
+
+##### Trip
+
+Lainaustapahtuman perustiedot.
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| departureStationID | Int! | Lainausaseman id-tunnus |
+| returnStationId | Int! | Palautusaseman id-tunnus |
+| coveredDistance | Int! | Matkan pituus |
+| duration | Int! | Matkan kesto |
+| departureStationName | String! | Lainausaseman nimi |
+| returnStationName | String! | Palautusaseman nimi |
 
 
 
