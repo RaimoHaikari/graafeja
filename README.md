@@ -175,6 +175,8 @@ Pyörillä tehdyt reissut.
 | ret_Weekday | integer | Palautusajankohdan viikonpäivä |
 | ret_Month | integer | Palautusajankohdan kuukausi |
 | ret_Year | integer | Palautusajankohdan vuosi |
+| distBin | integer | Matkan pituus 500 m kokoisiin koreihin jaoteltuna |
+| minuteBin | float | Matkan kesto 5 min kokoisiin koreihin jaoteltuna |
 
 Lisäksi on käytössä kaksi näkymää.
 

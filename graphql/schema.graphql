@@ -79,6 +79,12 @@ type Query {
 
     " + Asemalle tehdy kuukausittaiset palautusmäärät"
     returnsByTheMonth(returnStationID: Int!): [EventsByMonth]!
+
+    " - Lainat ajetun matkan pituuden mukaan 500 m välein luokiteltuna"
+    tripsByDistance: [DistanceBin]!
+
+    "- Lainat laina-ajan mukaan 5 minuutin välein luokiteltuna"
+    tripsByDuration: [DurationBin]!
 }
 
 "+ TOIMINNAN PERUSTIEDOT"
@@ -261,6 +267,22 @@ type TripsByReturnStation {
   avgDuration: Float!
   "Lyhin palautusreissun kestoaika"
   minDuration: Int!
+}
+
+"- yhteenveto lainauksista ajomatkan mukaan ryhmiteltyna"
+type DistanceBin {
+  "Ajetun matkan pituus"
+  bin: Int!
+  "Lainauskerrat"
+  number_of_events: Int!
+}
+
+"- yhteenveto lainauksista lainan keston mukaan ryhmiteltyna"
+type DurationBin {
+  "Ajetun matkan pituus"
+  bin: Float!
+  "Lainauskerrat"
+  number_of_events: Int!
 }
 
 "Account of a person who utilizes this application."
