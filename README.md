@@ -30,14 +30,14 @@ Seuraavat ohjeet on laadittu kotikoneelle tapahtuva asennusta silmällä pitäen
 Asennus edellyttää, että käytössä on:
 
 - [Git](https://git-scm.com/)-versionhallintaohjelmisto
-- PHP:tä ja mySql:ää tukeva webpalvelin, esim. [Xampp](https://www.apachefriends.org/)
+- PHP:tä ja SQL:ää tukeva webpalvelin, esim. [Xampp](https://www.apachefriends.org/)
 - PHP:n versionhallintaohjelmisto [Composer](https://getcomposer.org/)
 
 #### Tietokanta
 
 Sovellus edellyttää tietokannan käyttöä, joten ensimmäisenä toimenpiteenä kannattaa luoda tietokanta ja käyttäjätili, jonka kautta Laravel pystyy tietokantaa käyttämään.
 
-Kotikoneella yksinkertaisimmillaan riittää kun suorittaa phpMyAdmin-ikkunassa SQL-komennon:
+Yksinkertaisimmillaan kotikoneella riittää, kun suorittaa phpMyAdmin-ikkunassa SQL-komennon:
 
 ```
 CREATE DATABASE <tietokannan nimi>;
@@ -49,7 +49,7 @@ Ympäristöstä riippuen tietokannan käyttö saattaa lisäksi edellyttää, ett
 - määritetään tälle salasana
 - annetaan em. käyttäjälle päivitysoikeudet juuri luotuu tietokantaan.
 
-Omalla koneellani käytän Xampp asennuksen oletusarvoja, joissa __root-käyttäjällä__ on täydet oikeudet kaikkiin tietokantoihin, eikä __root-käyttäjälle__ ole asetettu salasanaa. 
+Omalla koneellani käytän Xampp-asennuksen oletusarvoja, joissa __root-käyttäjällä__ on täydet oikeudet kaikkiin tietokantoihin, eikä __root-käyttäjälle__ ole asetettu salasanaa. 
 
 Minulla on tässä vaiheessa siis koossa seuraavat tiedot:
 

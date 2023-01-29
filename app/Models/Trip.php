@@ -44,7 +44,9 @@ class Trip extends Model
         'ret_Day',
         'ret_Weekday',
         'ret_Month',
-        'ret_Year'
+        'ret_Year',
+        'distBin',
+        'minuteBin'
     ];
 
     /**

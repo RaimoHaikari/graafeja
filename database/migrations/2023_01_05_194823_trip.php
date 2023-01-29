@@ -49,6 +49,9 @@ class Trip extends Migration
             $table->integer('ret_Month');
             $table->integer('ret_Year');
 
+            $table->integer('distBin');
+            $table->float('minuteBin', 10, 2);
+
             $table->timestamps();
         });
     }

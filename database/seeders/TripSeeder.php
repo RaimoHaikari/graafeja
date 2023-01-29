@@ -68,6 +68,8 @@ class TripSeeder extends Seeder
                         "ret_Weekday" => $data['13'],
                         "ret_Month" => $data['14'],
                         "ret_Year" => $data['15'],
+                        "distBin" => $data['16'],
+                        "minuteBin" => $data['17'],
                     ]
                 );
 
