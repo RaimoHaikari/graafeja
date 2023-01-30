@@ -80,11 +80,11 @@ type Query {
     " + Asemalle tehdy kuukausittaiset palautusmäärät"
     returnsByTheMonth(returnStationID: Int!): [EventsByMonth]!
 
-    " - Lainat ajetun matkan pituuden mukaan 500 m välein luokiteltuna"
-    tripsByDistance: [DistanceBin]!
+    " + Lainat ajetun matkan pituuden mukaan 500 m välein luokiteltuna"
+    tripsByDistance(departureStationID: Int, returnStationID: Int): [DistanceBin]!
 
-    "- Lainat laina-ajan mukaan 5 minuutin välein luokiteltuna"
-    tripsByDuration: [DurationBin]!
+    "+ Lainat laina-ajan mukaan 5 minuutin välein luokiteltuna"
+    tripsByDuration(departureStationID: Int, returnStationID: Int): [DurationBin]!
 }
 
 "+ TOIMINNAN PERUSTIEDOT"
@@ -269,7 +269,7 @@ type TripsByReturnStation {
   minDuration: Int!
 }
 
-"- yhteenveto lainauksista ajomatkan mukaan ryhmiteltyna"
+"+ yhteenveto lainauksista ajomatkan mukaan ryhmiteltyna"
 type DistanceBin {
   "Ajetun matkan pituus"
   bin: Int!
@@ -277,7 +277,7 @@ type DistanceBin {
   number_of_events: Int!
 }
 
-"- yhteenveto lainauksista lainan keston mukaan ryhmiteltyna"
+"+ yhteenveto lainauksista lainan keston mukaan ryhmiteltyna"
 type DurationBin {
   "Ajetun matkan pituus"
   bin: Float!

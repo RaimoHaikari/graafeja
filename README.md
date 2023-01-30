@@ -649,6 +649,60 @@ Mikäli parametrille annetaan arvoksi __null__ kysely palauttaa tiedot kaikkien 
 ```
 
 
+##### tripsByDistance
+
+Palauttaa lainat ajetun matkan pituuden mukaan 500 m välein luokiteltuna.
+
+__Parametrit__
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| departureStationID | Int | Lainausaseman id-tunnus |
+| returnStationID | Int!| Palautusaseman id-tunnus |
+
+***Palauttaa***
+
+[DistanceBin](#distancebin) -luokan objekteja sisältävän taulukon.
+
+**Esimerkki**
+
+```
+{
+  tripsByDistance(departureStationID: 326) {
+    bin
+    number_of_events
+  }
+}
+```
+
+
+##### tripsByDuration
+
+Palauttaa lainat ajetun matkan keston mukaan 5 minuutin välein luokiteltuna.
+
+__Parametrit__
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| departureStationID | Int | Lainausaseman id-tunnus |
+| returnStationID | Int!| Palautusaseman id-tunnus |
+
+***Palauttaa***
+
+[DurationBin](#durationbin) -luokan objekteja sisältävän taulukon.
+
+**Esimerkki**
+
+```
+{
+  tripsByDuration{
+    bin
+    number_of_events
+  }
+}
+```
+
+
 ##### tripsByReturnStation
 
 Palauttaa yhteenvedon asemille suoritetuista palautuksista. Tuloksen voidaan tarvittaessa rajata yksittäiseen asemaan.
@@ -681,10 +735,6 @@ Mikäli parametrille annetaan arvoksi __null__ kysely palauttaa yhteenvetotiedot
 ```
 
 
-
-
-
-
 #### Tietotyypit
 
 ##### DepartedTrips
@@ -703,6 +753,36 @@ Minne asemalta lainatulla pyörällä mentiin tai mistä sinne palautettu pyör�
 | retX | Float! | Palautusaseman sijantipaikan x-koordinaatti |
 | retY | Float! | Palautusaseman sijantipaikan y-koordinaatti |
 | lkm | Int! | Lainauskerrat |
+
+##### DistanceBin
+
+Yhteenveto lainauksista ajomatkan mukaan ryhmiteltyna.
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| bin | Int! | Ajetun matkan pituus |
+| number_of_events | Int! | Lainauskerrat |
+
+Ajetut matkat on ryhmitelty 500 metrin kokoisiin koreihin. Korista ilmoitetaan aina korin keskipiste. 
+
+Esim. jo lainamatka on 1223 m
+- kuuluu se koriin [1000,1500)
+- matkan luokka on 1250
+
+##### DurationBin
+
+Yhteenveto lainauksista lainan keston mukaan ryhmiteltyna.
+
+| Kenttä | Tyyppi | Sisältö |
+| :--- | :--- | :--- |
+| bin | Float! | Ajetun matkan pituus |
+| number_of_events | Int! | Lainauskerrat |
+
+Ajetut matkat on ryhmitelty 5 minuutin kokoisiin koreihin. Korista ilmoitetaan aina korin keskipiste. 
+
+Esim. jo lainamatka kesti 16.4 min
+- kuuluu se koriin [15,20)
+- matkan luokka on 17.5
 
 ##### EventsByDayOfTheWeek
 
