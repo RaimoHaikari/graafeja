@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/solita', function () {
+    return view('solita');
+});
+
 Route::get('/users', function () {
 
     $users = App\Models\User::all();
