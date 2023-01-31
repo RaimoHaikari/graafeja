@@ -101,7 +101,8 @@ Luodaan käytettävät tietokantataulut:
 php artisan migrate
 ```
 
-Githubista kloonattu repository pitää sisällään touko- ja kesäkuun matkat. Ne löytyvät tiedostosta \database\data\2021-05-Prod.csv.
+Githubista kloonattu repository pitää sisällään toukokuun matkat. Ne löytyvät tiedostosta \database\data\2021-05-Prod.csv.
+
 
 Alustetaan tietokanta näillä tiedoilla:
 
@@ -109,7 +110,7 @@ Alustetaan tietokanta näillä tiedoilla:
 php artisan db:seed --class=DatabaseSeeder
 ```
 
-Siemenenä käytettävän tiedoston koko on 80 MB, joten tietojen luku kestää jonkin aikaa. Omalla koneellani tämä vaihe vie noin 2 minuuttia.
+Siemenenä käytettävän tiedoston koko on 80 MB, joten tietojen luku kestää jonkin aikaa. Omalla koneellani tämä vaihe vie noin minuutin.
 
 Tässä vaiheessa kaiken pitäisi ollan käyttövalmiina.
 
