@@ -9,6 +9,12 @@ Tämä on Helsingin kaupungin lainapyörillä tehtyjä matkoja visualisoivan sov
 
 GraphQL -kyselyitä voi testata osoitteessa [http://graafeja.tahtisadetta.fi/graphiql](http://graafeja.tahtisadetta.fi/graphiql).
 
+### Front end
+
+Sovelluksen front end löytyy osoitteesta: [http://city-bike-app.tahtisadetta.fi/](http://city-bike-app.tahtisadetta.fi/)
+
+Front endin koodi löytyy oheisesta reposirotysta [https://github.com/RaimoHaikari/city-bike-app](https://github.com/RaimoHaikari/city-bike-app)
+
 ### Aineisto
 
 Aineistona käytetään kesällä 2021 Helsingin kaupungin lainapyörillä ajetuista matkoista kerättyä tietoa. 
@@ -18,6 +24,19 @@ Sovelluksessa on käytössä tietoa kolmen kuukauden ajalta, kattaen touko- ja h
 Tiedot ovat peräisi Solita Oy:n Dev Academyn esivalintatehtävästä ja löytyvät osoitteesta: [https://github.com/solita/dev-academy-2023-exercise](https://github.com/solita/dev-academy-2023-exercise).
 
 Aineiston alkuperäinen tuottaja on [HSL](https://www.hsl.fi/en/hsl/open-data).
+
+#### Aineiston esikäsittely
+
+Aineiston esikäsittely on suoritettu R-Studiolla.
+
+Esikäsittelyn yhteydessä:
+
+- poistin alle 10 sekuntia kestäneet matkat
+- poistin alle 10 metrin pituisen matkat
+- päällekkäisiksi tulkitsemani tietueet
+- matkat jotka joko alkoivat tai päättyivät laina-asemaverkoston ulkopuolelle
+
+Esikäsittelyn vaiheet kuvaava RMarkdown-työkirja on nähtävissä osoitteessa: [http://graafeja.tahtisadetta.fi/solita](http://graafeja.tahtisadetta.fi/solita)
 
 ### Asennus
 
